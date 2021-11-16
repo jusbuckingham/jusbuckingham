@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Jus.
 - 👀 I’m interested in software engineering & data science.
 - 🌱 I’m currently learning full stack engineering.
-- 💞️ I’m looking to collaborate on web3 entertainment & financial projects.
+- 💞️ I’m looking to collaborate on web3 entertainment, financial & data projects.
 - 📫 How to reach me: hit me on my hip.
 
 <!---
