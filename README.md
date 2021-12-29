@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Jus.
 - 👀 I’m interested in software engineering & data science.
 - 🌱 I’m currently learning full stack engineering.
-- 💞️ I’m looking to collaborate on arts/entertainment & financial projects.
+- 💞️ I’m looking to collaborate on arts, entertainment & financial projects.
 - 📫 How to reach me: oh, you know...
 
 <!---
