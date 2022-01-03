@@ -2,7 +2,6 @@
 - 👀 I’m interested in software engineering & data science.
 - 🌱 I’m currently learning full stack engineering.
 - 💞️ I’m looking to collaborate on arts, entertainment & financial projects.
-- 📫 How to reach me: oh, you know...
 
 <!---
 jusbuckingham/jusbuckingham is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
