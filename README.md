@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Jus.
 - 👀 I’m interested in software engineering & data science.
-- 🌱 I’m currently learning MERN stack.
+- 🌱 I’m currently learning python.
 - 💞️ I’m looking to collaborate on web3 projects (arts, entertainment & financial).
 
 <!---
