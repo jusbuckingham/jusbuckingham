@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Jus.
 - 👀 I’m interested in software engineering & data science.
 - 🌱 I’m currently learning Solidity.
-- 💞️ I’m looking to collaborate on web3 projects (arts, entertainment & financial).
+- 💞️ I’m looking to collaborate on arts, entertainment & financial projects.
 
 <!---
 jusbuckingham/jusbuckingham is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
