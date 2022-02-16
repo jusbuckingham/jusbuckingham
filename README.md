@@ -1,5 +1,4 @@
 - 👋 Hi, I’m Jus.
-- 👀 I’m interested in software engineering & data science.
 - 🌱 I’m currently learning Solidity.
 - 💞️ I’m looking to collaborate on arts, entertainment & financial projects.
 
