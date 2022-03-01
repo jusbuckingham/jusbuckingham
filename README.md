@@ -1,4 +1,4 @@
-- 👋 Yo, I’m Jus.
+- 👋 Hello hii, I’m Jus.
 - 🌱 I’m currently learning about EVM & smart contracts.
 - 💞️ I’m looking to collaborate on entertainment & financial projects.
 
