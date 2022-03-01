@@ -1,5 +1,5 @@
 - 👋 Yo, I’m Jus.
-- 🌱 I’m currently learning about solidity & smart contracts.
+- 🌱 I’m currently learning about EVM & smart contracts.
 - 💞️ I’m looking to collaborate on arts, entertainment & financial projects.
 
 <!---
