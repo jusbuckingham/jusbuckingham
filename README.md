@@ -1,6 +1,6 @@
 - 👋 Hello hii, I’m Jus.
 - 🌱 I’m currently grinding dat leetcode juhurd!?
-- 💞️ I’m looking to collaborate on entertainment & financial projects.
+- 💞️ I’m looking to collaborate on web3 projects.
 
 <!---
 jusbuckingham/jusbuckingham is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
