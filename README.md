@@ -1,5 +1,5 @@
 - 👋 Hello hii, I’m Jus.
-- 🌱 I’m currently interested in all things data related.
+- 🌱 I’m currently learning D3.js
 - 💞️ I’m looking to collaborate on web3 entertainment projects.
 
 <!---
