@@ -1,5 +1,5 @@
 - 👋 Hello hii, I’m Jus.
-- 🌱 I’m currently learning D3.js
+- 🌱 I’m currently learning databricks & pyspark.
 - 💞️ I’m looking to collaborate on web3 entertainment projects.
 
 <!---
