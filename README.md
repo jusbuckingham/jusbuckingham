@@ -1,6 +1,6 @@
 - 👋 Hello hii, I’m Jus.
 - 🌱 I’m currently learning databricks & pyspark.
-- 💞️ I’m looking to collaborate on web3 entertainment projects.
+- 💞️ I’m looking to collaborate on data projects.
 
 <!---
 jusbuckingham/jusbuckingham is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
