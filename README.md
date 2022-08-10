@@ -1,5 +1,5 @@
 - 👋 Hello hii, I’m Jus.
-- 🌱 I’m currently learning databricks & pyspark.
+- 🌱 I’m currently learning data solutions engineering.
 - 💞️ I’m looking to collaborate on data projects.
 
 <!---
