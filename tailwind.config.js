@@ -6,14 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        red: {
-          50: '#FFEBEB',
-          100: '#FFD6D6',
-          200: '#FFB3B3',
-          300: '#FF8F8F',
-          400: '#FF6B6B',
-          500: '#FF4747',
-          600: '#E3342F',
+        crimson: '#DC143C',
+        neutral: {
+          200: '#E5E7EB',
+          300: '#D1D5DB',
         },
         gray: {
           50: '#F7FAFC',

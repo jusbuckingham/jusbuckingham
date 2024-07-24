@@ -5,7 +5,7 @@ import { useInterval } from 'react-use';
 
 const Home: NextPage = () => {
   const [time, setTime] = useState(new Date());
-  const [bgColor, setBgColor] = useState('bg-red-50');
+  const [bgColor, setBgColor] = useState('bg-gray-50');
 
   useInterval(() => {
     setTime(new Date());
@@ -14,19 +14,19 @@ const Home: NextPage = () => {
   useEffect(() => {
     const hour = time.getHours();
     if (hour >= 6 && hour < 9) {
-      setBgColor('bg-red-50');
+      setBgColor('bg-gray-50');
     } else if (hour >= 9 && hour < 12) {
-      setBgColor('bg-red-100');
+      setBgColor('bg-gray-100');
     } else if (hour >= 12 && hour < 15) {
-      setBgColor('bg-red-200');
+      setBgColor('bg-gray-200');
     } else if (hour >= 15 && hour < 18) {
-      setBgColor('bg-red-300');
+      setBgColor('bg-gray-300');
     } else if (hour >= 18 && hour < 21) {
-      setBgColor('bg-red-400');
+      setBgColor('bg-gray-400');
     } else if (hour >= 21 && hour < 24) {
-      setBgColor('bg-red-500');
+      setBgColor('bg-gray-500');
     } else {
-      setBgColor('bg-red-600');
+      setBgColor('bg-gray-600');
     }
   }, [time]);
 
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
       </div>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-6 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold my-4 text-gray-800">
+        <h1 className="text-4xl md:text-6xl font-bold my-4 text-crimson">
           Jus Buckingham
         </h1>
 
@@ -52,26 +52,19 @@ const Home: NextPage = () => {
         </p>
 
         <div className="mt-6 flex flex-col items-center justify-center max-w-4xl w-full">
-          <section className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-white rounded-xl shadow-lg space-y-4">
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-800">Artist</h2>
-          </section>
+          <a href="https://github.com/jusbuckingham" target="_blank" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-800">GitHub</h2>
+          </a>
 
           <div className="flex flex-col md:flex-row justify-center mt-6">
-            <section className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-white rounded-xl shadow-lg space-y-4">
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-800">Technologist</h2>
-            </section>
+            <a href="https://www.linkedin.com/in/jus-buckingham/" target="_blank" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
+              <h2 className="text-xl md:text-2xl font-semibold text-gray-800">LinkedIn</h2>
+            </a>
 
-            <section className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-white rounded-xl shadow-lg space-y-4">
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-800">Entrepreneur</h2>
-            </section>
+            <a href="https://docs.google.com/document/d/1NZGu9GgaoLUzz0X3lB345SV7xhNpC-ehFzIULuuTs94/edit?usp=sharing" target="_blank" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
+              <h2 className="text-xl md:text-2xl font-semibold text-gray-800">Resume</h2>
+            </a>
           </div>
-        </div>
-
-        <div className="mt-8 w-full flex flex-col items-center">
-          <a href="https://link1.com" className="w-full max-w-xs p-4 m-2 bg-white rounded-xl shadow-lg text-gray-800 hover:bg-gray-800 hover:text-white transition duration-300">Link 1</a>
-          <a href="https://link2.com" className="w-full max-w-xs p-4 m-2 bg-white rounded-xl shadow-lg text-gray-800 hover:bg-gray-800 hover:text-white transition duration-300">Link 2</a>
-          <a href="https://link3.com" className="w-full max-w-xs p-4 m-2 bg-white rounded-xl shadow-lg text-gray-800 hover:bg-gray-800 hover:text-white transition duration-300">Link 3</a>
-          <a href="https://link4.com" className="w-full max-w-xs p-4 m-2 bg-white rounded-xl shadow-lg text-gray-800 hover:bg-gray-800 hover:text-white transition duration-300">Link 4</a>
         </div>
       </main>
 
