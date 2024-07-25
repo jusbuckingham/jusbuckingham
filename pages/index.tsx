@@ -48,23 +48,13 @@ const Home: NextPage = () => {
         </h1>
 
         <p className="mt-3 text-lg md:text-2xl text-gray-800">
-          Renaissance Man
+          Technologist and Entrepreneur
         </p>
 
         <div className="mt-6 flex flex-col items-center justify-center max-w-4xl w-full">
-          <a href="https://github.com/jusbuckingham" target="_blank" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-800">GitHub</h2>
+          <a href="https://kofa.ai/" target="_blank" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-800">kofa.ai</h2>
           </a>
-
-          <div className="flex flex-col md:flex-row justify-center mt-6">
-            <a href="https://www.linkedin.com/in/jus-buckingham/" target="_blank" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-800">LinkedIn</h2>
-            </a>
-
-            <a href="https://docs.google.com/document/d/1NZGu9GgaoLUzz0X3lB345SV7xhNpC-ehFzIULuuTs94/edit?usp=sharing" target="_blank" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-800">Resume</h2>
-            </a>
-          </div>
         </div>
       </main>
 
