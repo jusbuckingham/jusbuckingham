@@ -80,12 +80,16 @@ const Home: NextPage = () => {
         </h1>
 
         <p className="mt-3 text-lg md:text-2xl text-gray-800">
-          Technologist and Entrepreneur
+          Software Engineer and Technologist
         </p>
 
+        <div className="mt-6">
+          <img src="/images/k-town.jpeg" alt="Jus Buckingham in Korea Town" className="w-64 h-auto rounded-lg shadow-lg" />
+        </div>
+
         <div className="mt-6 flex flex-col items-center justify-center max-w-4xl w-full">
-          <a href="https://kofa.ai/" target="_blank" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-800">Kofa</h2>
+          <a href="https://github.com/jusbuckingham" target="_blank" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-800">GitHub</h2>
           </a>
         </div>
       </main>
