@@ -1,12 +1,13 @@
 # jusbuckingham.com
 
-Welcome to the my personal website.  This project showcases a minimalistic and modern website built with Next.js, Tailwind CSS, and TypeScript.
+Welcome to the personal website of Jus Buckingham, a renaissance man with diverse talents and interests. This project showcases a modern, minimalistic website built with Next.js, Tailwind CSS, and TypeScript.
 
 ## Features
 
 - Analog clock showing local time
 - Dynamic background color changes based on time of day
 - Profile picture and GitHub link
+- Bio and Currently Working On sections
 - Responsive design for desktop and mobile devices
 
 ## Technologies Used

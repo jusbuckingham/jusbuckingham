@@ -90,25 +90,25 @@ const Home: NextPage = () => {
         <div className="mt-8 w-full max-w-4xl bg-red-100 p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Bio</h2>
           <p className="text-lg md:text-xl text-gray-800 text-left">
-            Hi, I'm Jus Kwesi Buckingham, and my name means 'fair leader'. I was born in Lansing, MI, but I've been calling Los Angeles home for the past 10 years. Before that, I lived in Las Vegas, Vancouver, and Chicago.
+            Hi, I&apos;m Jus Kwesi Buckingham, and my name means &apos;fair leader&apos;. I was born in Lansing, MI, but I&apos;ve been calling Los Angeles home for the past 10 years. Before that, I lived in Las Vegas, Vancouver, and Chicago.
             <br /><br />
-            I picked up the saxophone when I was 9, inspired by legends like John Coltrane and Eric Dolphy. I've acted in a few independent movies and plays, and played saxophone in various bands in Las Vegas. In Chicago, I founded King Conundrum, where we put on live shows, hosted a podcast, created an album, and even started a travel show.
+            I picked up the saxophone when I was 9, inspired by legends like John Coltrane and Eric Dolphy. I&apos;ve acted in a few independent movies and plays, and played saxophone in various bands in Las Vegas. In Chicago, I founded King Conundrum, where we put on live shows, hosted a podcast, created an album, and even started a travel show.
             <br /><br />
-            Professionally, I'm a software engineer with over a decade of experience. I've worked in payment processing, streaming, and entertainment data platforms.
+            Professionally, I&apos;m a software engineer with over a decade of experience. I&apos;ve worked in payment processing, streaming, and entertainment data platforms.
           </p>
         </div>
 
         <div className="mt-8 w-full max-w-4xl bg-red-100 p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Currently Working On</h2>
-          <p className="text-lg md:text-xl text-gray-800 text-left">
-            Right now, I'm immersed in a few exciting projects:
+          <div className="text-lg md:text-xl text-gray-800 text-left">
+            Right now, I&apos;m immersed in a few exciting projects:
             <ul className="list-disc list-inside">
-              <li><strong>Startup:</strong> I'm building kofa.ai, a startup focused on 'woke' AI solutions.</li>
-              <li><strong>Writing:</strong> I'm writing a criticism series called "The Violence".</li>
-              <li><strong>Creative Projects:</strong> I'm working on a movie and music project named "Hollywood Rojo".</li>
-              <li><strong>Consulting:</strong> I'm also freelancing as a software engineering consultant.</li>
+              <li><strong>Startup:</strong> I&apos;m building kofa.ai, a startup focused on &apos;woke&apos; AI solutions.</li>
+              <li><strong>Writing:</strong> I&apos;m writing a criticism series called &quot;The Violence&quot;.</li>
+              <li><strong>Creative Projects:</strong> I&apos;m working on a movie and music project named &quot;Hollywood Rojo&quot;.</li>
+              <li><strong>Consulting:</strong> I&apos;m also freelancing as a software engineering consultant.</li>
             </ul>
-          </p>
+          </div>
         </div>
 
         <div className="mt-6 flex flex-col items-center justify-center max-w-4xl w-full">
