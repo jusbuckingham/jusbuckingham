@@ -84,7 +84,7 @@ const Home: NextPage = () => {
         </p>
 
         <div className="mt-6">
-          <img src="/jusbuckingham-k-town.jpeg" alt="Original Koreatown Picture" className="w-32 h-auto rounded-lg shadow-lg" />
+          <img src="/images/jusbuckingham-k-town.jpeg" alt="Original Koreatown Picture" className="w-32 h-auto rounded-lg shadow-lg" />
         </div>
 
         <div className="mt-8 w-full max-w-4xl bg-red-100 p-6 rounded-lg shadow-lg">
