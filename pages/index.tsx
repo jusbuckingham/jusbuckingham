@@ -133,6 +133,19 @@ const Home: NextPage = () => {
           </div>
         </div>
 
+        <div className="mt-8 w-full max-w-4xl bg-gray-200 p-6 rounded-lg shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Interviews</h2>
+          <div className="text-lg md:text-xl text-gray-800 text-left leading-relaxed">
+            <ul className="list-disc list-inside mt-2 ml-6">
+              <li>
+                <a href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584" target="_blank" className="text-crimson underline">
+                  Jus Buckingham - Keep the Faith (Podcast Interview)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div className="mt-6 flex flex-col items-center justify-center max-w-4xl w-full">
           <a href="https://github.com/jusbuckingham" target="_blank" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800">GitHub</h2>
