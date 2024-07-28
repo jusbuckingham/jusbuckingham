@@ -60,8 +60,30 @@ const Home: NextPage = () => {
   return (
     <div className={`relative flex flex-col items-center justify-center min-h-screen py-2 ${bgColor} text-gray-800`}>
       <Head>
-        <title>jusbuckingham.com</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Jus Buckingham - Renaissance Man, Software Engineer, Technologist</title>
+        <meta name="description" content="Explore the personal website of Jus Buckingham, a Renaissance man with diverse talents in software engineering, technology, music, and more." />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://www.jusbuckingham.com" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Jus Buckingham",
+              "url": "https://www.jusbuckingham.com",
+              "sameAs": [
+                "https://www.linkedin.com/in/jus-buckingham/",
+                "https://github.com/jusbuckingham"
+              ],
+              "jobTitle": "Software Engineer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "kofa.ai"
+              }
+            }
+          `}
+        </script>
       </Head>
 
       <div className="absolute top-4 right-4 text-sm md:text-xl text-right space-y-1">
@@ -84,7 +106,7 @@ const Home: NextPage = () => {
         </p>
 
         <div className="mt-6">
-          <img src="/images/jusbuckingham-k-town.jpeg" alt="Original Koreatown Picture" className="w-48 h-auto rounded-lg shadow-lg" />
+          <img src="/images/jusbuckingham-k-town.jpeg" alt="Jus Buckingham in Koreatown" className="w-48 h-auto rounded-lg shadow-lg" />
         </div>
 
         <div className="mt-8 w-full max-w-4xl bg-gray-200 p-6 rounded-lg shadow-lg">
@@ -131,14 +153,14 @@ const Home: NextPage = () => {
           position: relative;
           padding: 10px;
         }
-        
+
         .clock-face {
           position: relative;
           width: 100%;
           height: 100%;
           transform: translateY(-3px); /* account for the extra height in the clock hands */
         }
-        
+
         .hand {
           width: 50%;
           background: black;
@@ -149,15 +171,15 @@ const Home: NextPage = () => {
           transition: all 0.05s;
           transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
         }
-        
+
         .hour-hand {
           height: 4px;
         }
-        
+
         .minute-hand {
           height: 3px;
         }
-        
+
         .second-hand {
           height: 2px;
           background: red;
