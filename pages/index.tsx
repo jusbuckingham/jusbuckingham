@@ -112,11 +112,11 @@ const Home: NextPage = () => {
         <div className="mt-8 w-full max-w-4xl bg-gray-200 p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Bio</h2>
           <p className="text-lg md:text-xl text-gray-800 text-left leading-relaxed">
-            Hi, I&apos;m Jus Kwesi Buckingham, and my name means &apos;fair leader&apos;. I was born in Lansing, MI, but I&apos;ve been calling Los Angeles home for the past 10 years. Before that, I lived in Las Vegas, Vancouver, and Chicago.
+            I&apos;m Jus Kwesi Buckingham, and my name means fair leader. I was born in Lansing, MI, and I&apos;ve lived Los Angeles for the past 10 years. Before that, I lived in Las Vegas, Vancouver, and Chicago.
             <br /><br />
-            I picked up the saxophone when I was 9, inspired by legends like John Coltrane and Eric Dolphy. I&apos;ve acted in a few independent movies and plays, and played saxophone in various bands in Las Vegas. In Chicago, I founded King Conundrum, where we put on live shows, hosted a podcast, created an album, and even started a travel show.
+            I started playing the saxophone when I was 9, inspired by legends like John Coltrane and Eric Dolphy. I&apos;ve acted in independent movies and plays, and played saxophone in various bands. In Chicago, I founded King Conundrum, where we put on live shows, hosted a podcast, created an album, and even started a travel show.
             <br /><br />
-            Professionally, I&apos;m a software engineer with over a decade of experience. I&apos;ve worked in payment processing, streaming, and entertainment data platforms.
+            Most recently, I&apos;m a software engineer with over a decade of experience. I&apos;ve worked in payment processing, streaming, and entertainment data platforms.
           </p>
         </div>
 
@@ -134,12 +134,12 @@ const Home: NextPage = () => {
         </div>
 
         <div className="mt-8 w-full max-w-4xl bg-gray-200 p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Interviews</h2>
+          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Selected Works</h2>
           <div className="text-lg md:text-xl text-gray-800 text-left leading-relaxed">
             <ul className="list-disc list-inside mt-2 ml-6">
               <li>
                 <a href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584" target="_blank" className="text-crimson underline">
-                  Jus Buckingham - Keep the Faith (Podcast Interview)
+                  Keep the Faith 
                 </a>
               </li>
             </ul>
