@@ -146,12 +146,6 @@ const Home: NextPage = () => {
             </ul>
           </div>
         </div>
-
-        <div className="mt-6 flex flex-col items-center justify-center max-w-4xl w-full">
-          <a href="https://github.com/jusbuckingham" target="_blank" rel="noopener noreferrer" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-800">GitHub</h2>
-          </a>
-        </div>
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t mt-6 border-gray-200">
