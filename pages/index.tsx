@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   const [time, setTime] = useState(new Date());
@@ -87,7 +88,7 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="absolute top-4 right-4 text-sm md:text-xl text-right space-y-1">
-        <div className="clock">
+        <div className="clock" role="img" aria-label="Analog clock showing the current time">
           <div className="clock-face">
             <div className="hand hour-hand"></div>
             <div className="hand minute-hand"></div>
@@ -106,40 +107,40 @@ const Home: NextPage = () => {
         </p>
 
         <div className="mt-6">
-          <img src="/images/jusbuckingham-k-town.jpeg" alt="Jus Buckingham in Koreatown" className="w-48 h-auto rounded-lg shadow-lg" />
+          <Image src="/images/jusbuckingham-k-town.jpeg" alt="Jus Buckingham in Koreatown" width={192} height={192} className="rounded-lg shadow-lg" />
         </div>
 
         <div className="mt-8 w-full max-w-4xl bg-gray-200 p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Bio</h2>
           <p className="text-lg md:text-xl text-gray-800 text-left leading-relaxed">
-            I&apos;m Jus Kwesi Buckingham, and my name means fair leader. I was born in Lansing, MI, and I&apos;ve lived Los Angeles for the past 10 years. Before that, I lived in Las Vegas, Vancouver, and Chicago.
+            Jus Kwesi Buckingham, whose name means &quot;fair leader,&quot; was born in Lansing, MI, and has been residing in Los Angeles for the past 10 years. Prior to that, he lived in Las Vegas, Vancouver, and Chicago.
             <br /><br />
-            I started playing the saxophone when I was 9, inspired by legends like John Coltrane and Eric Dolphy. I&apos;ve acted in independent movies and plays, and played saxophone in various bands. In Chicago, I founded King Conundrum, where we put on live shows, hosted a podcast, created an album, and even started a travel show.
+            Jus began playing the saxophone at the age of 9, inspired by jazz legends like John Coltrane and Eric Dolphy. He has acted in independent films and plays, and performed as a saxophonist in various bands. In Chicago, Jus founded King Conundrum, an initiative that organized live shows, hosted a podcast, produced an album, and launched a travel show.
             <br /><br />
-            Most recently, I&apos;m a software engineer with over a decade of experience. I&apos;ve worked in payment processing, streaming, and entertainment data platforms.
+            Currently, Jus is a software engineer with over a decade of experience. His professional background spans across payment processing, streaming services, and entertainment data platforms.
           </p>
         </div>
 
         <div className="mt-8 w-full max-w-4xl bg-gray-200 p-6 rounded-lg shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Currently Working On</h2>
           <div className="text-lg md:text-xl text-gray-800 text-left leading-relaxed">
-            Right now, I&apos;m immersed in a few exciting projects:
+            Right now, Jus is immersed in a few exciting projects:
             <ul className="list-disc list-inside mt-2 ml-6">
-              <li><strong>Startup:</strong> I&apos;m building kofa.ai, a startup focused on &apos;woke&apos; AI solutions.</li>
-              <li><strong>Writing:</strong> I&apos;m writing a criticism series called &quot;The Violence&quot;.</li>
-              <li><strong>Creative Projects:</strong> I&apos;m working on a movie and music project named &quot;Hollywood Rojo&quot;.</li>
-              <li><strong>Consulting:</strong> I&apos;m also freelancing as a software engineering consultant.</li>
+              <li><strong>Startup:</strong> Developing kofa.ai, a startup focused on woke AI solutions.</li>
+              <li><strong>Writing:</strong> Crafting a criticism series titled &quot;The Violence&quot;.</li>
+              <li><strong>Creative Projects:</strong> Working on a movie and music project named &quot;Hollywood Rojo&quot;.</li>
+              <li><strong>Consulting:</strong> Freelancing as a software engineering consultant.</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-8 w-full max-w-4xl bg-gray-200 p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Selected Works</h2>
+          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Interviews</h2>
           <div className="text-lg md:text-xl text-gray-800 text-left leading-relaxed">
             <ul className="list-disc list-inside mt-2 ml-6">
               <li>
-                <a href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584" target="_blank" className="text-crimson underline">
-                  Keep the Faith 
+                <a href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
+                  Jus Buckingham - Keep the Faith (Podcast Interview)
                 </a>
               </li>
             </ul>
@@ -147,7 +148,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className="mt-6 flex flex-col items-center justify-center max-w-4xl w-full">
-          <a href="https://github.com/jusbuckingham" target="_blank" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
+          <a href="https://github.com/jusbuckingham" target="_blank" rel="noopener noreferrer" className="p-4 md:p-6 m-2 md:m-4 max-w-sm bg-neutral-200 rounded-xl shadow-lg space-y-4 hover:bg-neutral-300 transition duration-300">
             <h2 className="text-xl md:text-2xl font-semibold text-gray-800">GitHub</h2>
           </a>
         </div>
