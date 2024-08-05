@@ -1,6 +1,6 @@
 # Jus Buckingham Personal Website
 
-This is the personal website, built using Next.js, Tailwind CSS, and TypeScript. The site is deployed on Vercel and showcases my background, current projects, and provides links to my GitHub and a podcast interview.
+This is my personal website, built using Next.js, Tailwind CSS, and TypeScript. The site is deployed on Vercel and showcases my background, current projects, and provides links to my GitHub and a podcast interview.
 
 ## Technologies Used
 
