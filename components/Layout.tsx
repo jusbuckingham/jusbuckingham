@@ -1,7 +1,11 @@
-import { useEffect, useState } from 'react';
+import { ReactNode } from 'react';
 import Head from 'next/head';
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="relative flex flex-col min-h-screen bg-gray-50 text-gray-800">
       <Head>
