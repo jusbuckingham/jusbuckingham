@@ -1,10 +1,26 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import Layout from '../components/Layout';  // Adjust the import path as needed
 
 const Home: NextPage = () => {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:jus.buckingham@gmail.com';
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center w-full flex-1 px-6 text-center pt-16 md:pt-24 text-soft-white">
+    <Layout>
       <Head>
         <title>Jus Buckingham - Renaissance Man, Software Engineer, Technologist</title>
         <meta name="description" content="Explore the personal website of Jus Buckingham, a Renaissance man with diverse talents in software engineering, technology, music, and more." />
@@ -30,11 +46,21 @@ const Home: NextPage = () => {
         </script>
       </Head>
 
-      <h1 className="text-4xl md:text-6xl font-bold my-4 text-beige">
+      <div className="absolute top-4 right-4 text-sm md:text-xl text-right space-y-1">
+        <div className="clock" role="img" aria-label="Analog clock showing the current time">
+          <div className="clock-face">
+            <div className="hand hour-hand" style={{ transform: `rotate(${(time.getHours() / 12) * 360 + (time.getMinutes() / 60) * 30}deg)` }}></div>
+            <div className="hand minute-hand" style={{ transform: `rotate(${(time.getMinutes() / 60) * 360 + (time.getSeconds() / 60) * 6}deg)` }}></div>
+            <div className="hand second-hand" style={{ transform: `rotate(${(time.getSeconds() / 60) * 360}deg)` }}></div>
+          </div>
+        </div>
+      </div>
+
+      <h1 className="text-4xl md:text-6xl font-bold my-4 text-crimson">
         Jus Buckingham
       </h1>
 
-      <p className="mt-3 text-lg md:text-2xl">
+      <p className="mt-3 text-lg md:text-2xl text-soft-white">
         Renaissance Man
       </p>
 
@@ -42,43 +68,82 @@ const Home: NextPage = () => {
         <Image src="/images/jusbuckingham-k-town.jpeg" alt="Jus Buckingham in Koreatown" width={192} height={256} className="rounded-lg shadow-lg" />
       </div>
 
-      <div className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg">
-        <h2 className="text-2xl md:text-3xl font-bold my-4 text-beige">Bio</h2>
-        <p className="text-lg md:text-xl text-left leading-relaxed">
-          Jus Kwesi Buckingham, whose name means &quot;fair leader,&quot; was born in Lansing, MI, and has been residing in Los Angeles for the past 10 years. Prior to that, he lived in Las Vegas, Vancouver, and Chicago.
-          <br /><br />
-          Jus began playing the saxophone at the age of 9, inspired by jazz legends like John Coltrane and Eric Dolphy. He has acted in independent films and plays, and performed as a saxophonist in various bands. In Chicago, Jus founded King Conundrum, an initiative that organized live shows, hosted a podcast, produced an album, and launched a travel show.
-          <br /><br />
-          Currently, Jus is a software engineer with over a decade of experience. His professional background spans across payment processing, streaming services, and entertainment data platforms.
+      <div id="about" className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg text-soft-white">
+        <h2 className="text-2xl md:text-3xl font-bold my-4">About</h2>
+        <p>
+          Jus Kwesi Buckingham, whose name means &quot;fair leader,&quot; was born in Lansing, MI, and has been living in Los Angeles for the past 10 years, with previous stints in Las Vegas, Vancouver, and Chicago. He is an artist, technologist, and entrepreneur. Jus picked up the saxophone at the age of 9, influenced by John Coltrane and Eric Dolphy, and has since acted in films and plays, and performed in various bands. In Chicago, he founded the collective King Conundrum, hosting live shows, a podcast, an album, and a travel show. Currently, Jus is developing <a href="https://kofa.ai/" target="_blank" className="text-blue-600 underline hover:text-soft-white">kofa.ai</a>, focusing on &quot;woke&quot; AI solutions, writing a criticism series titled &quot;The Violence,&quot; and working on a movie and music project called &quot;Hollywood Rojo.&quot;
         </p>
+
       </div>
 
-      <div className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg">
-        <h2 className="text-2xl md:text-3xl font-bold my-4 text-beige">Currently Working On</h2>
-        <div className="text-lg md:text-xl text-left leading-relaxed">
-          Right now, Jus is immersed in a few exciting projects:
-          <ul className="list-disc list-inside mt-2 ml-6">
-            <li><strong>Startup:</strong> Developing kofa.ai, a startup focused on woke AI solutions.</li>
-            <li><strong>Writing:</strong> Crafting a criticism series titled &quot;The Violence&quot;.</li>
-            <li><strong>Creative Projects:</strong> Working on a movie and music project named &quot;Hollywood Rojo&quot;.</li>
-            <li><strong>Consulting:</strong> Freelancing as a software engineering consultant.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg">
-        <h2 className="text-2xl md:text-3xl font-bold my-4 text-beige">Interviews</h2>
+      <div id="selected-works" className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg text-soft-white">
+        <h2 className="text-2xl md:text-3xl font-bold my-4">Selected Works</h2>
         <div className="text-lg md:text-xl text-left leading-relaxed">
           <ul className="list-disc list-inside mt-2 ml-6">
             <li>
-              <a href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584" target="_blank" rel="noopener noreferrer" className="text-light-beige underline hover:text-soft-white">
+              <a href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-soft-white">
                 Jus Buckingham - Keep the Faith (Podcast Interview)
               </a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+
+      <div className="mt-8 w-full max-w-4xl flex justify-center p-6">
+        <button
+          onClick={handleEmailClick}
+          className="px-8 py-4 bg-dark-green text-soft-white font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-crimson"
+        >
+          Contact
+        </button>
+      </div>
+
+      <footer className="flex items-center justify-center w-full h-24 border-t mt-6 border-gray-200">
+        <p className="text-sm md:text-base">&copy; {new Date().getFullYear()} Jus Buckingham</p>
+      </footer>
+
+      <style jsx>{`
+        .clock {
+          width: 60px;
+          height: 60px;
+          border: 6px solid black;
+          border-radius: 50%;
+          position: relative;
+          padding: 10px;
+        }
+
+        .clock-face {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transform: translateY(-3px); /* account for the extra height in the clock hands */
+        }
+
+        .hand {
+          width: 50%;
+          background: black;
+          position: absolute;
+          top: 50%;
+          transform-origin: 100%;
+          transform: rotate(90deg);
+          transition: all 0.05s;
+          transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+        }
+
+        .hour-hand {
+          height: 4px;
+        }
+
+        .minute-hand {
+          height: 3px;
+        }
+
+        .second-hand {
+          height: 2px;
+          background: red;
+        }
+      `}</style>
+    </Layout>
   );
 };
 
