@@ -1,6 +1,6 @@
 # Jus Buckingham Personal Website
 
-This is my personal website, built using Next.js, Tailwind CSS, and TypeScript. The site is deployed on Vercel and showcases my background, current projects, and provides links to my GitHub and a podcast interview.
+This is my personal website, built using Next.js, Tailwind CSS, and TypeScript. The site is deployed on Vercel and showcases my background, current projects, and selected links to my work.
 
 ## Technologies Used
 
@@ -15,13 +15,6 @@ This is my personal website, built using Next.js, Tailwind CSS, and TypeScript. 
 - **Dynamic Background**: The background color changes based on the time of day.
 - **Analog Clock**: Displays the current time with an analog clock.
 - **Structured Data**: SEO-optimized with structured data for better search engine visibility.
-
-## Content Overview
-
-- **About Section**: Includes a concise biography highlighting Jus Kwesi Buckingham's identity as an Artist, Technologist & Entrepreneur, as well as his creative and technological endeavors.
-- **Interests Section**: Lists key interests including Chess, Jazz, Software Engineering, Data Science, and more.
-- **Selected Works**: Features a link to a podcast interview.
-- **Contact**: A button that allows visitors to quickly send an email.
 
 ## Setup
 
