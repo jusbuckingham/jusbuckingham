@@ -6,6 +6,8 @@ import Layout from '../components/Layout';  // Adjust the import path as needed
 
 const Home: NextPage = () => {
   const [time, setTime] = useState(new Date());
+  const [bgColor, setBgColor] = useState('bg-gray-50');
+  const [textColor, setTextColor] = useState('text-gray-800');
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -14,6 +16,24 @@ const Home: NextPage = () => {
 
     return () => clearInterval(intervalId);
   }, []);
+
+  useEffect(() => {
+    const hour = time.getHours();
+
+    if (hour >= 6 && hour < 12) {
+      setBgColor('bg-gray-50');
+      setTextColor('text-gray-800');
+    } else if (hour >= 12 && hour < 18) {
+      setBgColor('bg-gray-200');
+      setTextColor('text-gray-800');
+    } else if (hour >= 18 && hour < 21) {
+      setBgColor('bg-gray-400');
+      setTextColor('text-gray-100');
+    } else {
+      setBgColor('bg-gray-600');
+      setTextColor('text-gray-100');
+    }
+  }, [time]);
 
   const handleEmailClick = () => {
     window.location.href = 'mailto:jus.buckingham@gmail.com';
@@ -37,7 +57,7 @@ const Home: NextPage = () => {
               "https://www.linkedin.com/in/jus-buckingham/",
               "https://github.com/jusbuckingham"
             ],
-            "jobTitle": "Software Engineer",
+            "jobTitle": "Founder",
             "worksFor": {
               "@type": "Organization",
               "name": "kofa.ai"
@@ -46,61 +66,80 @@ const Home: NextPage = () => {
         </script>
       </Head>
 
-      <div className="absolute top-4 right-4 text-sm md:text-xl text-right space-y-1">
-        <div className="clock" role="img" aria-label="Analog clock showing the current time">
-          <div className="clock-face">
-            <div className="hand hour-hand" style={{ transform: `rotate(${(time.getHours() / 12) * 360 + (time.getMinutes() / 60) * 30}deg)` }}></div>
-            <div className="hand minute-hand" style={{ transform: `rotate(${(time.getMinutes() / 60) * 360 + (time.getSeconds() / 60) * 6}deg)` }}></div>
-            <div className="hand second-hand" style={{ transform: `rotate(${(time.getSeconds() / 60) * 360}deg)` }}></div>
+      <div className={`relative flex flex-col items-center justify-center min-h-screen py-2 ${bgColor} ${textColor}`}>
+        <div className="absolute top-4 right-4 text-sm md:text-xl text-right space-y-1">
+          <div className="clock" role="img" aria-label="Analog clock showing the current time">
+            <div className="clock-face">
+              <div className="hand hour-hand" style={{ transform: `rotate(${(time.getHours() / 12) * 360 + (time.getMinutes() / 60) * 30}deg)` }}></div>
+              <div className="hand minute-hand" style={{ transform: `rotate(${(time.getMinutes() / 60) * 360 + (time.getSeconds() / 60) * 6}deg)` }}></div>
+              <div className="hand second-hand" style={{ transform: `rotate(${(time.getSeconds() / 60) * 360}deg)` }}></div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <h1 className="text-4xl md:text-6xl font-bold my-4 text-crimson">
-        Jus Buckingham
-      </h1>
+        <h1 className="text-4xl md:text-6xl font-bold my-4 text-crimson">
+          Jus Buckingham
+        </h1>
 
-      <p className="mt-3 text-lg md:text-2xl text-soft-white">
-        Renaissance Man
-      </p>
-
-      <div className="mt-6">
-        <Image src="/images/jusbuckingham-k-town.jpeg" alt="Jus Buckingham in Koreatown" width={192} height={256} className="rounded-lg shadow-lg" />
-      </div>
-
-      <div id="about" className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg text-soft-white">
-        <h2 className="text-2xl md:text-3xl font-bold my-4">About</h2>
-        <p>
-          Jus Kwesi Buckingham, whose name means &quot;fair leader,&quot; was born in Lansing, MI, and has been living in Los Angeles for the past 10 years, with previous stints in Las Vegas, Vancouver, and Chicago. He is an artist, technologist, and entrepreneur. Jus picked up the saxophone at the age of 9, influenced by John Coltrane and Eric Dolphy, and has since acted in films and plays, and performed in various bands. In Chicago, he founded the collective King Conundrum, hosting live shows, a podcast, an album, and a travel show. Currently, Jus is developing <a href="https://kofa.ai/" target="_blank" className="text-blue-600 underline hover:text-soft-white">kofa.ai</a>, focusing on &quot;woke&quot; AI solutions, writing a criticism series titled &quot;The Violence,&quot; and working on a movie and music project called &quot;Hollywood Rojo.&quot;
+        <p className="mt-3 text-lg md:text-2xl">
+          Renaissance Man
         </p>
 
-      </div>
-
-      <div id="selected-works" className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg text-soft-white">
-        <h2 className="text-2xl md:text-3xl font-bold my-4">Selected Works</h2>
-        <div className="text-lg md:text-xl text-left leading-relaxed">
-          <ul className="list-disc list-inside mt-2 ml-6">
-            <li>
-              <a href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-soft-white">
-                Jus Buckingham - Keep the Faith (Podcast Interview)
-              </a>
-            </li>
-          </ul>
+        <div className="mt-6">
+          <Image src="/images/jusbuckingham-k-town.jpeg" alt="Jus Buckingham in Koreatown" width={192} height={256} className="rounded-lg shadow-lg" />
         </div>
-      </div>
 
-      <div className="mt-8 w-full max-w-4xl flex justify-center p-6">
-        <button
-          onClick={handleEmailClick}
-          className="px-8 py-4 bg-dark-green text-soft-white font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-crimson"
-        >
-          Contact
-        </button>
-      </div>
+        <div id="about" className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold my-4">About</h2>
+          <p className="text-lg md:text-xl text-left leading-relaxed">
+            Jus Buckingham is a Renaissance man with a passion for technology, creativity, and innovation. Born in Lansing, MI, he has spent the last decade living in Los Angeles, following stints in Las Vegas, Vancouver, and Chicago.
+            <br /><br />
+            He began playing the saxophone at the age of 9, inspired by jazz legends like John Coltrane and Eric Dolphy. Over the years, he has acted in films, played in various bands, and founded a collective called King Conundrum in Chicago. The collective hosted live shows, recorded a podcast, released an album, and even launched a travel show.
+            <br /><br />
+            Currently, Jus is focused on building <a href="https://kofa.ai/" target="_blank" className="text-blue-600 underline hover:text-soft-white">kofa.ai</a>, a startup centered around woke AI solutions. He is also writing a criticism series titled &quot;The Violence&quot; and working on a movie and music project called &quot;Hollywood Rojo.&quot;
+          </p>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t mt-6 border-gray-200">
-        <p className="text-sm md:text-base">&copy; {new Date().getFullYear()} Jus Buckingham</p>
-      </footer>
+        </div>
+
+        <div id="interests" className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold my-4">Interests</h2>
+          <div className="text-lg md:text-xl text-left leading-relaxed">
+            <ul className="list-disc list-inside mt-2 ml-6">
+              <li>Chess</li>
+              <li>Jazz</li>
+              <li>Software Engineering &amp; Data Science</li>
+              <li>Terrence Malick&apos;s &quot;Days of Heaven&quot;</li>
+              <li>Anything involving the Theatre!</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="selected-works" className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold my-4">Selected Works</h2>
+          <div className="text-lg md:text-xl text-left leading-relaxed">
+            <ul className="list-disc list-inside mt-2 ml-6">
+              <li>
+                <a href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-soft-white">
+                  Jus Buckingham - Keep the Faith (Podcast Interview)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8 w-full max-w-4xl flex justify-center p-6">
+          <button
+            onClick={handleEmailClick}
+            className="px-8 py-4 bg-dark-green text-soft-white font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-crimson"
+          >
+            Contact
+          </button>
+        </div>
+
+        <footer className="flex items-center justify-center w-full h-24 border-t mt-6 border-gray-200">
+          <p className="text-sm md:text-base">&copy; {new Date().getFullYear()} Jus Buckingham</p>
+        </footer>
+      </div>
 
       <style jsx>{`
         .clock {
