@@ -1,12 +1,15 @@
-import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import Layout from '../components/Layout';
+import Head from 'next/head';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
+    <>
+      <Head>
+        <link rel="icon" href="/images/favicon.png" type="image/png" />
+      </Head>
       <Component {...pageProps} />
-    </Layout>
+    </>
   );
 }
 

@@ -12,7 +12,7 @@ const Layout = ({ children }: LayoutProps) => {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Personal website of Jus Buckingham." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.png" />
         <title>Jus Buckingham</title>
       </Head>
       <main className="flex-1 flex flex-col items-center justify-center">
