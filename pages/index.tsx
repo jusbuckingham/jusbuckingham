@@ -92,7 +92,7 @@ const Home: NextPage = () => {
         <div id="about" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">About</h2>
           <p className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
-            Jus Buckingham is an Artist, Technologist & Entrepreneur. Born in Lansing, MI, and now based in Los Angeles, he&apos;s spent years shaping his craft across Las Vegas, Vancouver, and Chicago.
+            Jus Kwesi Buckingham is an Artist, Technologist & Entrepreneur. Born in Lansing, MI, and now based in Los Angeles, he&apos;s spent years shaping his craft across Las Vegas, Vancouver, and Chicago.
             <br /><br />
             As an artist, Jus started playing the saxophone at 9, inspired by jazz legends like John Coltrane and Eric Dolphy. He&apos;s acted in films, performed in bands, and founded King Conundrum in Chicago—a collective for live shows, podcasts, albums, and a travel show.
             <br /><br />
