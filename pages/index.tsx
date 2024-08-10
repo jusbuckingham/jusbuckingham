@@ -104,8 +104,8 @@ const Home: NextPage = () => {
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Interests</h2>
           <div className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
             <ul className="list-disc list-inside mt-2 ml-6">
-              <li>Chess</li>
               <li>Jazz</li>
+              <li>Chess</li>
               <li>Software Engineering &amp; Data Science</li>
               <li>Terrence Malick&apos;s &quot;Days of Heaven&quot;</li>
               <li>Anything involving tha Theatre!</li>
