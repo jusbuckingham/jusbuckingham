@@ -16,6 +16,13 @@ This is my personal website, built using Next.js, Tailwind CSS, and TypeScript. 
 - **Analog Clock**: Displays the current time with an analog clock.
 - **Structured Data**: SEO-optimized with structured data for better search engine visibility.
 
+## Content Overview
+
+- **About Section**: Includes a concise biography highlighting Jus Kwesi Buckingham's identity as an Artist, Technologist & Entrepreneur, as well as his creative and technological endeavors.
+- **Interests Section**: Lists key interests including Chess, Jazz, Software Engineering, Data Science, and more.
+- **Selected Works**: Features a link to a podcast interview.
+- **Contact**: A button that allows visitors to quickly send an email.
+
 ## Setup
 
 To run this project locally, follow these steps:
