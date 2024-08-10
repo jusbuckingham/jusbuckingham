@@ -5,9 +5,9 @@ import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';  // Adjust the import path as needed
 
 const Home: NextPage = () => {
-  const [time, setTime] = useState(new Date());
-  const [bgColor, setBgColor] = useState('bg-gray-50');
-  const [textColor, setTextColor] = useState('text-gray-800');
+  const [time, setTime] = useState<Date>(new Date());
+  const [bgColor, setBgColor] = useState<string>('bg-white');
+  const [textColor, setTextColor] = useState<string>('text-gray-900');
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -22,16 +22,16 @@ const Home: NextPage = () => {
 
     if (hour >= 6 && hour < 12) {
       setBgColor('bg-gray-50');
-      setTextColor('text-gray-800');
+      setTextColor('text-gray-900');
     } else if (hour >= 12 && hour < 18) {
-      setBgColor('bg-gray-200');
-      setTextColor('text-gray-800');
+      setBgColor('bg-gray-100');
+      setTextColor('text-gray-900');
     } else if (hour >= 18 && hour < 21) {
-      setBgColor('bg-gray-400');
-      setTextColor('text-gray-100');
+      setBgColor('bg-gray-200');
+      setTextColor('text-gray-700');
     } else {
-      setBgColor('bg-gray-600');
-      setTextColor('text-gray-100');
+      setBgColor('bg-gray-300');
+      setTextColor('text-gray-700');
     }
   }, [time]);
 
@@ -42,8 +42,8 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Jus Buckingham - Renaissance Man, Software Engineer, Technologist</title>
-        <meta name="description" content="Explore the personal website of Jus Buckingham, a Renaissance man with diverse talents in software engineering, technology, music, and more." />
+        <title>Jus Buckingham - Artist, Technologist & Entrepreneur</title>
+        <meta name="description" content="Explore the personal website of Jus Buckingham, an Artist, Technologist & Entrepreneur with diverse talents in software engineering, technology, music, and more." />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://www.jusbuckingham.com" />
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
               "https://www.linkedin.com/in/jus-buckingham/",
               "https://github.com/jusbuckingham"
             ],
-            "jobTitle": "Founder",
+            "jobTitle": "Software Engineer",
             "worksFor": {
               "@type": "Organization",
               "name": "kofa.ai"
@@ -82,44 +82,43 @@ const Home: NextPage = () => {
         </h1>
 
         <p className="mt-3 text-lg md:text-2xl">
-          Renaissance Man
+          Artist, Technologist & Entrepreneur
         </p>
 
         <div className="mt-6">
           <Image src="/images/jusbuckingham-k-town.jpeg" alt="Jus Buckingham in Koreatown" width={192} height={256} className="rounded-lg shadow-lg" />
         </div>
 
-        <div id="about" className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl md:text-3xl font-bold my-4">About</h2>
-          <p className="text-lg md:text-xl text-left leading-relaxed">
-            Jus Buckingham is a Renaissance man with a passion for technology, creativity, and innovation. Born in Lansing, MI, he has spent the last decade living in Los Angeles, following stints in Las Vegas, Vancouver, and Chicago.
+        <div id="about" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">About</h2>
+          <p className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
+            Jus Buckingham is an Artist, Technologist & Entrepreneur. Born in Lansing, MI, and now based in Los Angeles, he&apos;s spent years shaping his craft across Las Vegas, Vancouver, and Chicago.
             <br /><br />
-            He began playing the saxophone at the age of 9, inspired by jazz legends like John Coltrane and Eric Dolphy. Over the years, he has acted in films, played in various bands, and founded a collective called King Conundrum in Chicago. The collective hosted live shows, recorded a podcast, released an album, and even launched a travel show.
+            As an artist, Jus started playing the saxophone at 9, inspired by jazz legends like John Coltrane and Eric Dolphy. He&apos;s acted in films, performed in bands, and founded King Conundrum in Chicago—a collective for live shows, podcasts, albums, and a travel show.
             <br /><br />
-            Currently, Jus is focused on building <a href="https://kofa.ai/" target="_blank" className="text-blue-600 underline hover:text-soft-white">kofa.ai</a>, a startup centered around woke AI solutions. He is also writing a criticism series titled &quot;The Violence&quot; and working on a movie and music project called &quot;Hollywood Rojo.&quot;
+            In tech, Jus is building <a href="https://kofa.ai/" target="_blank" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on &quot;woke&quot; AI solutions. His entrepreneurial spirit fuels his work across software engineering, creative projects, and critical writing.
           </p>
-
         </div>
 
-        <div id="interests" className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl md:text-3xl font-bold my-4">Interests</h2>
-          <div className="text-lg md:text-xl text-left leading-relaxed">
+        <div id="interests" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Interests</h2>
+          <div className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
             <ul className="list-disc list-inside mt-2 ml-6">
               <li>Chess</li>
               <li>Jazz</li>
               <li>Software Engineering &amp; Data Science</li>
               <li>Terrence Malick&apos;s &quot;Days of Heaven&quot;</li>
-              <li>Anything involving the Theatre!</li>
+              <li>Anything involving tha Theatre!</li>
             </ul>
           </div>
         </div>
 
-        <div id="selected-works" className="mt-8 w-full max-w-4xl bg-dark-green p-6 rounded-lg shadow-lg">
-          <h2 className="text-2xl md:text-3xl font-bold my-4">Selected Works</h2>
-          <div className="text-lg md:text-xl text-left leading-relaxed">
+        <div id="selected-works" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Selected Works</h2>
+          <div className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
             <ul className="list-disc list-inside mt-2 ml-6">
               <li>
-                <a href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-soft-white">
+                <a href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">
                   Jus Buckingham - Keep the Faith (Podcast Interview)
                 </a>
               </li>
@@ -130,14 +129,14 @@ const Home: NextPage = () => {
         <div className="mt-8 w-full max-w-4xl flex justify-center p-6">
           <button
             onClick={handleEmailClick}
-            className="px-8 py-4 bg-dark-green text-soft-white font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-crimson"
+            className="px-8 py-4 bg-neutral-300 text-gray-800 font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-crimson hover:text-white"
           >
             Contact
           </button>
         </div>
 
         <footer className="flex items-center justify-center w-full h-24 border-t mt-6 border-gray-200">
-          <p className="text-sm md:text-base">&copy; {new Date().getFullYear()} Jus Buckingham</p>
+          <p className="text-sm md:text-base text-gray-700">&copy; {new Date().getFullYear()} Jus Buckingham</p>
         </footer>
       </div>
 
@@ -180,6 +179,19 @@ const Home: NextPage = () => {
         .second-hand {
           height: 2px;
           background: red;
+        }
+
+        /* Add custom colors for crimson */
+        .text-crimson {
+          color: #dc143c;
+        }
+
+        .hover\:text-crimson:hover {
+          color: #dc143c;
+        }
+
+        .hover\:bg-crimson:hover {
+          background-color: #dc143c;
         }
       `}</style>
     </Layout>
