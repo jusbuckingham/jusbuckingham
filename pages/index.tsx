@@ -79,7 +79,7 @@ const Home: NextPage = () => {
         </div>
 
         <h1 className="text-4xl md:text-6xl font-bold my-4 text-crimson">
-          Jus K. Buckingham
+          Jus Buckingham
         </h1>
 
         <p className="mt-3 text-lg md:text-2xl">
