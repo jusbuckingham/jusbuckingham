@@ -64,6 +64,7 @@ const Home: NextPage = () => {
             }
           })}
         </script>
+
       </Head>
 
       <div className={`relative flex flex-col items-center justify-center min-h-screen py-2 ${bgColor} ${textColor}`}>
@@ -92,9 +93,9 @@ const Home: NextPage = () => {
         <div id="about" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">About</h2>
           <p className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
-            Jus Kwesi Buckingham, whose name means &quot;fair leader,&quot; is an Artist, Technologist & Entrepreneur. Born in Lansing, Michigan, and now based in Los Angeles, he&apos;s spent years shaping his craft across Las Vegas, Vancouver, and Chicago.
+            Jus Kwesi Buckingham, whose name means &quot;fair leader,&quot; is an Artist, Technologist &amp; Entrepreneur. Born in Lansing, Michigan, he has refined his craft over the years in cities like Las Vegas, Vancouver, and Chicago, and now calls Los Angeles home.
             <br /><br />
-            As an artist, Jus started playing the saxophone at 9, inspired by jazz legends like John Coltrane and Eric Dolphy. He&apos;s acted in films, performed in bands, and founded King Conundrum in Chicago—a collective for live shows, podcasts, albums, and a travel show.
+            Jus began his artistic journey at the age of 9, inspired by jazz legends like John Coltrane and Eric Dolphy. Over the years, he&apos;s acted in films, performed in bands, and founded King Conundrum in Chicago—a creative collective that produces live shows, podcasts, albums, and a travel show.
             <br /><br />
             In tech, Jus is building <a href="https://kofa.ai/" target="_blank" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on &quot;woke&quot; AI solutions. His entrepreneurial spirit fuels his work across software engineering, creative projects, and critical writing.
           </p>
