@@ -130,7 +130,7 @@ const Home: NextPage = () => {
         <div className="mt-8 w-full max-w-4xl flex justify-center p-6">
           <button
             onClick={handleEmailClick}
-            className="px-8 py-4 bg-neutral-300 text-gray-800 font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-crimson hover:text-white"
+            className="px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-crimson hover:text-white"
           >
             Contact
           </button>
