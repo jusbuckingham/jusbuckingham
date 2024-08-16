@@ -96,9 +96,12 @@ const Home: NextPage = () => {
             <br /><br />
             Jus began his artistic journey at the age of 9, inspired by jazz legends like John Coltrane and Eric Dolphy. Over the years, he&apos;s acted in films, performed in bands, and founded King Conundrum in Chicago—a creative collective that produces live shows, podcasts, albums, and a travel show.
             <br /><br />
+            In addition to his artistic pursuits, Jus is currently working on a criticism series titled <em>The Violence</em> and a fictional story called <em>Hollywood Rojo</em>, both of which explore complex social themes through a unique and compelling narrative lens.
+            <br /><br />
             In tech, Jus is building <a href="https://kofa.ai/" target="_blank" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on &quot;woke&quot; AI solutions. His entrepreneurial spirit fuels his work across software engineering, creative projects, and critical writing.
           </p>
         </div>
+
 
         <div id="interests" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Interests</h2>
