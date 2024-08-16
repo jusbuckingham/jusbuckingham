@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import Layout from '../components/Layout';  // Adjust the import path as needed
+import Layout from '../components/Layout';
 
 const Home: NextPage = () => {
   const [time, setTime] = useState<Date>(new Date());
@@ -64,7 +64,6 @@ const Home: NextPage = () => {
             }
           })}
         </script>
-
       </Head>
 
       <div className={`relative flex flex-col items-center justify-center min-h-screen py-2 ${bgColor} ${textColor}`}>
