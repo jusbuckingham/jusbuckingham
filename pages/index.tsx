@@ -110,14 +110,82 @@ const Home: NextPage = () => {
               <li>Jazz</li>
               <li>Chess</li>
               <li>Software Engineering &amp; Data Science</li>
-              <li>Terrence Malick&apos;s &quot;Days of Heaven&quot;</li>
-              <li>Anything involving tha Theatre!</li>
             </ul>
           </div>
         </div>
 
+        <div id="favorite-books" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Favorite Books</h2>
+          <div className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
+            <ul className="list-disc list-inside mt-2 ml-6">
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Atlas_Shrugged" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">
+                  Atlas Shrugged
+                </a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Siddhartha_(novel)" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">
+                  Siddhartha
+                </a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Post_Office_(novel)" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">
+                  Post Office
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="favorite-movies" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Favorite Movies</h2>
+          <div className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
+            <ul className="list-disc list-inside mt-2 ml-6">
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Malcolm_X_(1992_film)" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">
+                  Malcolm X
+                </a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/On_the_Waterfront" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">
+                  On the Waterfront
+                </a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Days_of_Heaven" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">
+                  Days of Heaven
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="favorite-albums" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Favorite Albums</h2>
+          <div className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
+            <ul className="list-disc list-inside mt-2 ml-6">
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Voodoo_(D%27Angelo_album)" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">
+                  Voodoo
+                </a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Giant_Steps" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">
+                  Giant Steps
+                </a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Morning_View" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">
+                  Morning View
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
         <div id="selected-works" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
-          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Selected Works</h2>
+          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Interview</h2>
           <div className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
             <ul className="list-disc list-inside mt-2 ml-6">
               <li>
