@@ -197,7 +197,7 @@ const Home: NextPage = () => {
       </li>
       <li>
         <a
-          href="https://en.wikipedia.org/wiki/Giant_Steps_(John_Coltrane_album)"
+          href="https://en.wikipedia.org/wiki/Giant_Steps"
           target="_blank"
           rel="noopener noreferrer"
           className="text-indigo-600 underline hover:text-crimson"
