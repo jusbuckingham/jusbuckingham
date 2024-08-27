@@ -76,7 +76,7 @@ const Home: NextPage = () => {
           <p className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
             Jus Buckingham is an Artist, Technologist, and Entrepreneur with a passion for innovation. Born in Lansing, Michigan, and having honed his craft in cities like Las Vegas, Vancouver, and Chicago, he now calls Los Angeles home.
             <br /><br />
-            Jus started his journey in the arts at age 9, drawing inspiration from jazz legends like John Coltrane and Eric Dolphy. Over the years, he has acted in films, performed in bands, and founded King Conundrum in Chicago—a creative collective producing live shows, podcasts, albums, and a travel show.
+            Jus started his journey in the arts at age 9, drawing inspiration from jazz legends like John Coltrane and Eric Dolphy. Over the years, he has acted in plays, films, performed in bands, and founded King Conundrum in Chicago—a creative collective producing live shows, podcasts, albums, and a travel show.
             <br /><br />
             Currently, Jus is building <a href="https://kofa.ai/" target="_blank" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on AI solutions with a purpose. In addition to his artistic and entrepreneurial pursuits, Jus is a skilled Software Engineer and Technical Consultant available for hire. His work is driven by a deep commitment to innovation and creativity across multiple disciplines.
           </p>
