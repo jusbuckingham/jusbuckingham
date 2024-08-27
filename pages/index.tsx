@@ -6,8 +6,6 @@ import Layout from '../components/Layout';
 
 const Home: NextPage = () => {
   const [time, setTime] = useState<Date>(new Date());
-  const [bgColor, setBgColor] = useState<string>('bg-white');
-  const [textColor, setTextColor] = useState<string>('text-gray-900');
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -16,24 +14,6 @@ const Home: NextPage = () => {
 
     return () => clearInterval(intervalId);
   }, []);
-
-  useEffect(() => {
-    const hour = time.getHours();
-
-    if (hour >= 6 && hour < 12) {
-      setBgColor('bg-gray-50');
-      setTextColor('text-gray-900');
-    } else if (hour >= 12 && hour < 18) {
-      setBgColor('bg-gray-100');
-      setTextColor('text-gray-900');
-    } else if (hour >= 18 && hour < 21) {
-      setBgColor('bg-gray-200');
-      setTextColor('text-gray-700');
-    } else {
-      setBgColor('bg-gray-300');
-      setTextColor('text-gray-700');
-    }
-  }, [time]);
 
   const handleEmailClick = () => {
     window.location.href = 'mailto:jus.buckingham@gmail.com';
@@ -55,9 +35,11 @@ const Home: NextPage = () => {
             "url": "https://www.jusbuckingham.com",
             "sameAs": [
               "https://www.linkedin.com/in/jus-buckingham/",
-              "https://github.com/jusbuckingham"
+              "https://github.com/jusbuckingham",
+              "https://www.imdb.com/name/nm2443321/",
+              "https://www.stephenkingshortmovies.com/interviews/jus-buckingham-october-25-2009/"
             ],
-            "jobTitle": "Software Engineer",
+            "jobTitle": "Founder",
             "worksFor": {
               "@type": "Organization",
               "name": "kofa.ai"
@@ -66,7 +48,7 @@ const Home: NextPage = () => {
         </script>
       </Head>
 
-      <div className={`relative flex flex-col items-center justify-center min-h-screen py-2 ${bgColor} ${textColor}`}>
+      <div className="relative flex flex-col items-center justify-center min-h-screen py-2 bg-white text-gray-900">
         <div className="absolute top-4 right-4 text-sm md:text-xl text-right space-y-1">
           <div className="clock" role="img" aria-label="Analog clock showing the current time">
             <div className="clock-face">
@@ -92,14 +74,13 @@ const Home: NextPage = () => {
         <div id="about" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">About</h2>
           <p className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
-            Jus Kwesi, whose name means &quot;fair leader,&quot; is an Artist, Technologist &amp; Entrepreneur. Born in Lansing, Michigan, he has refined his craft over the years in cities like Las Vegas, Vancouver, and Chicago, and now calls Los Angeles home.
+            Jus Buckingham is an Artist, Technologist, and Entrepreneur with a passion for innovation. Born in Lansing, Michigan, and having honed his craft in cities like Las Vegas, Vancouver, and Chicago, he now calls Los Angeles home.
             <br /><br />
-            Jus began his artistic journey at the age of 9, inspired by jazz legends like John Coltrane and Eric Dolphy. Over the years, he&apos;s acted in films, performed in bands, and founded King Conundrum in Chicago—a creative collective that produces live shows, podcasts, albums, and a travel show.
+            Jus started his journey in the arts at age 9, drawing inspiration from jazz legends like John Coltrane and Eric Dolphy. Over the years, he has acted in films, performed in bands, and founded King Conundrum in Chicago—a creative collective producing live shows, podcasts, albums, and a travel show.
             <br /><br />
-            Jus is building <a href="https://kofa.ai/" target="_blank" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on &quot;woke&quot; AI solutions. His entrepreneurial spirit fuels his work across software engineering, creative projects, and critical writing.
+            Currently, Jus is building <a href="https://kofa.ai/" target="_blank" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on AI solutions with a purpose. In addition to his artistic and entrepreneurial pursuits, Jus is a skilled Software Engineer and Technical Consultant available for hire. His work is driven by a deep commitment to innovation and creativity across multiple disciplines.
           </p>
         </div>
-
 
         <div id="interests" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Interests</h2>
@@ -113,111 +94,111 @@ const Home: NextPage = () => {
         </div>
 
         <div id="favs" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
-  <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Favorites</h2>
-  <div className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
-    <h3 className="text-xl md:text-2xl font-bold my-4">Books</h3>
-    <ul className="list-disc list-inside mt-2 ml-6">
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Atlas_Shrugged"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-indigo-600 underline hover:text-crimson"
-        >
-          Atlas Shrugged
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Siddhartha_(novel)"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-indigo-600 underline hover:text-crimson"
-        >
-          Siddhartha
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Post_Office_(novel)"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-indigo-600 underline hover:text-crimson"
-        >
-          Post Office
-        </a>
-      </li>
-    </ul>
+          <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Favorites</h2>
+          <div className="text-lg md:text-xl text-left leading-relaxed text-gray-700">
+            <h3 className="text-xl md:text-2xl font-bold my-4">Books</h3>
+            <ul className="list-disc list-inside mt-2 ml-6">
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Atlas_Shrugged"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 underline hover:text-crimson"
+                >
+                  Atlas Shrugged
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Siddhartha_(novel)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 underline hover:text-crimson"
+                >
+                  Siddhartha
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Post_Office_(novel)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 underline hover:text-crimson"
+                >
+                  Post Office
+                </a>
+              </li>
+            </ul>
 
-    <h3 className="text-xl md:text-2xl font-bold my-4">Movies</h3>
-    <ul className="list-disc list-inside mt-2 ml-6">
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Malcolm_X_(1992_film)"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-indigo-600 underline hover:text-crimson"
-        >
-          Malcolm X
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/On_the_Waterfront"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-indigo-600 underline hover:text-crimson"
-        >
-          On the Waterfront
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Days_of_Heaven"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-indigo-600 underline hover:text-crimson"
-        >
-          Days of Heaven
-        </a>
-      </li>
-    </ul>
+            <h3 className="text-xl md:text-2xl font-bold my-4">Movies</h3>
+            <ul className="list-disc list-inside mt-2 ml-6">
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Malcolm_X_(1992_film)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 underline hover:text-crimson"
+                >
+                  Malcolm X
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/On_the_Waterfront"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 underline hover:text-crimson"
+                >
+                  On the Waterfront
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Days_of_Heaven"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 underline hover:text-crimson"
+                >
+                  Days of Heaven
+                </a>
+              </li>
+            </ul>
 
-    <h3 className="text-xl md:text-2xl font-bold my-4">Albums</h3>
-    <ul className="list-disc list-inside mt-2 ml-6">
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Voodoo_(D%27Angelo_album)"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-indigo-600 underline hover:text-crimson"
-        >
-          Voodoo
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Giant_Steps"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-indigo-600 underline hover:text-crimson"
-        >
-          Giant Steps
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://en.wikipedia.org/wiki/Morning_View"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-indigo-600 underline hover:text-crimson"
-        >
-          Morning View
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
+            <h3 className="text-xl md:text-2xl font-bold my-4">Albums</h3>
+            <ul className="list-disc list-inside mt-2 ml-6">
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Voodoo_(D%27Angelo_album)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 underline hover:text-crimson"
+                >
+                  Voodoo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Giant_Steps"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 underline hover:text-crimson"
+                >
+                  Giant Steps
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Morning_View"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-indigo-600 underline hover:text-crimson"
+                >
+                  Morning View
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <div id="selected-works" className="mt-8 w-full max-w-4xl bg-gray-50 p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl md:text-3xl font-bold my-4 text-crimson">Interview</h2>
@@ -235,7 +216,7 @@ const Home: NextPage = () => {
         <div className="mt-8 w-full max-w-4xl flex justify-center p-6">
           <button
             onClick={handleEmailClick}
-            className="px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-crimson hover:text-white"
+            className="px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-indigo-600 active:bg-indigo-800 focus:outline-none"
           >
             Contact
           </button>
