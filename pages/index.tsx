@@ -39,7 +39,7 @@ const Home: NextPage = () => {
               "https://www.imdb.com/name/nm2443321/",
               "https://www.stephenkingshortmovies.com/interviews/jus-buckingham-october-25-2009/"
             ],
-            "jobTitle": "Founder",
+            "jobTitle": "Founder & Software Engineer",
             "worksFor": {
               "@type": "Organization",
               "name": "kofa.ai"
