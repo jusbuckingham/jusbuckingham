@@ -223,6 +223,22 @@ const Home: NextPage = () => {
         </section>
 
         <section id="selected-works" className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-lg">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-crimson">Selected Works</h2>
+          <ul className="text-lg md:text-xl leading-relaxed text-gray-700 list-disc list-inside ml-6">
+            <li>
+              <a
+                href="https://music.apple.com/us/playlist/jusla/pl.u-8aAVodjIoaMmWY"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 underline hover:text-crimson"
+              >
+                Jusla
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="interview" className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-crimson">Interview</h2>
           <ul className="text-lg md:text-xl leading-relaxed text-gray-700 list-disc list-inside ml-6">
             <li>
@@ -232,7 +248,7 @@ const Home: NextPage = () => {
                 rel="noopener noreferrer"
                 className="text-indigo-600 underline hover:text-crimson"
               >
-                Jus Buckingham - Keep the Faith (Podcast Interview)
+                Jus Buckingham - Keep the Faith
               </a>
             </li>
           </ul>
@@ -241,7 +257,7 @@ const Home: NextPage = () => {
         <div className="mt-12 w-full max-w-4xl flex justify-center p-6">
           <button
             onClick={handleEmailClick}
-            className="px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-indigo-600 active:bg-indigo-800 focus:outline-none"
+            className="px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-dark-crimson active:bg-dark-crimson focus:outline-none"
           >
             Contact
           </button>
@@ -304,6 +320,15 @@ const Home: NextPage = () => {
 
         .hover\:bg-crimson:hover {
           background-color: #dc143c;
+        }
+
+        .bg-crimson {
+          background-color: #dc143c;
+        }
+
+        .hover\:bg-dark-crimson:hover,
+        .active\:bg-dark-crimson:active {
+          background-color: #a40e2c; /* Darker shade of crimson */
         }
       `}</style>
     </Layout>
