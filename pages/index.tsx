@@ -1,3 +1,4 @@
+// pages/index.tsx
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -25,7 +26,7 @@ const Home: NextPage = () => {
         <title>Jus Buckingham - Artist, Technologist & Entrepreneur</title>
         <meta
           name="description"
-          content="Explore the personal website of Jus Buckingham, an Artist, Technologist & Entrepreneur with diverse talents in software engineering, technology, music, and more."
+          content="Discover the world of Jus Buckingham, an Artist, Technologist, and Entrepreneur passionate about software engineering, music, and innovative startups."
         />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,13 +53,14 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="relative flex flex-col items-center justify-center min-h-screen py-12 bg-gray-50 text-gray-900">
+        {/* Clock Display */}
         <div className="absolute top-4 right-4 text-sm md:text-xl text-right">
-          <div className="clock" aria-label="Analog clock showing the current time">
+          <div className="clock" aria-label="Current time">
             <div className="clock-face">
               <div
                 className="hand hour-hand"
                 style={{
-                  transform: `rotate(${(time.getHours() / 12) * 360 + (time.getMinutes() / 60) * 30}deg)`,
+                  transform: `rotate(${((time.getHours() % 12) / 12) * 360 + (time.getMinutes() / 60) * 30}deg)`,
                 }}
               ></div>
               <div
@@ -77,14 +79,17 @@ const Home: NextPage = () => {
           </div>
         </div>
 
+        {/* Main Title */}
         <h1 className="text-4xl md:text-6xl font-extrabold my-4 text-crimson">
           Jus Buckingham
         </h1>
 
+        {/* Subtitle */}
         <p className="mt-2 text-lg md:text-2xl">
           Artist, Technologist & Entrepreneur
         </p>
 
+        {/* Profile Image */}
         <div className="mt-8">
           <Image
             src="/images/jusbuckingham-k-town.jpeg"
@@ -95,19 +100,21 @@ const Home: NextPage = () => {
           />
         </div>
 
+        {/* About Section */}
         <section id="about" className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-crimson">About</h2>
           <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-            Jus Buckingham is an Artist, Technologist, and Entrepreneur with a passion for innovation. Born in Lansing, Michigan, and having honed his craft in cities like Las Vegas, Vancouver, and Chicago, he now calls Los Angeles home.
+            Jus Buckingham is an Artist, Technologist, and Entrepreneur driven by a passion for innovation and creativity. Originally from Lansing, Michigan, Jus has explored vibrant cities like Las Vegas, Vancouver, and Chicago before establishing his base in Los Angeles.
             <br />
             <br />
-            Jus started his journey in the arts at age 9, drawing inspiration from jazz legends like John Coltrane and Eric Dolphy. Over the years, he has acted in plays, films, performed in bands, and founded King Conundrum in Chicago—a creative collective producing live shows, podcasts, albums, and a travel show.
+            From a young age, Jus immersed himself in the arts, drawing inspiration from jazz legends such as John Coltrane and Eric Dolphy. His diverse creative pursuits include acting in plays and films, performing in bands, and founding King Conundrum in Chicago—a creative collective dedicated to producing live shows, podcasts, albums, and engaging travel content.
             <br />
             <br />
-            Currently, Jus is building <a href="https://kofa.ai/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on AI solutions with a purpose. In addition to his artistic and entrepreneurial pursuits, Jus is a skilled Software Engineer and Technical Consultant available for hire. His work is driven by a deep commitment to innovation and creativity across multiple disciplines.
+            Currently, Jus is building <a href="https://kofa.ai/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on delivering purpose-driven AI solutions. Alongside his entrepreneurial ventures, Jus offers his expertise as a Software Engineer and Technical Consultant, committed to driving innovation across multiple disciplines.
           </p>
         </section>
 
+        {/* Interests Section */}
         <section id="interests" className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-crimson">Interests</h2>
           <ul className="text-lg md:text-xl leading-relaxed text-gray-700 list-disc list-inside ml-6">
@@ -117,8 +124,11 @@ const Home: NextPage = () => {
           </ul>
         </section>
 
+        {/* Favorites Section */}
         <section id="favs" className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-crimson">Favorites</h2>
+          
+          {/* Books */}
           <h3 className="text-2xl md:text-3xl font-bold mb-4">Books</h3>
           <ul className="text-lg md:text-xl leading-relaxed text-gray-700 list-disc list-inside ml-6">
             <li>
@@ -153,6 +163,7 @@ const Home: NextPage = () => {
             </li>
           </ul>
 
+          {/* Movies */}
           <h3 className="text-2xl md:text-3xl font-bold mt-8 mb-4">Movies</h3>
           <ul className="text-lg md:text-xl leading-relaxed text-gray-700 list-disc list-inside ml-6">
             <li>
@@ -187,6 +198,7 @@ const Home: NextPage = () => {
             </li>
           </ul>
 
+          {/* Albums */}
           <h3 className="text-2xl md:text-3xl font-bold mt-8 mb-4">Albums</h3>
           <ul className="text-lg md:text-xl leading-relaxed text-gray-700 list-disc list-inside ml-6">
             <li>
@@ -222,9 +234,22 @@ const Home: NextPage = () => {
           </ul>
         </section>
 
+        {/* Selected Works Section */}
         <section id="selected-works" className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-crimson">Selected Works</h2>
           <ul className="text-lg md:text-xl leading-relaxed text-gray-700 list-disc list-inside ml-6">
+            {/* Interviews */}
+            <li>
+              <a
+                href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-indigo-600 underline hover:text-crimson"
+              >
+                Keep the Faith
+              </a>
+            </li>
+            {/* Other Selected Works */}
             <li>
               <a
                 href="https://music.apple.com/us/playlist/jusla/pl.u-8aAVodjIoaMmWY"
@@ -238,44 +263,34 @@ const Home: NextPage = () => {
           </ul>
         </section>
 
-        <section id="interview" className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-lg">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-crimson">Interview</h2>
-          <ul className="text-lg md:text-xl leading-relaxed text-gray-700 list-disc list-inside ml-6">
-            <li>
-              <a
-                href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-indigo-600 underline hover:text-crimson"
-              >
-                Jus Buckingham - Keep the Faith
-              </a>
-            </li>
-          </ul>
-        </section>
-
+        {/* Contact Button */}
         <div className="mt-12 w-full max-w-4xl flex justify-center p-6">
           <button
             onClick={handleEmailClick}
-            className="px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-dark-crimson active:bg-dark-crimson focus:outline-none"
+            className="px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-dark-crimson active:bg-dark-crimson focus:outline-none focus:ring-2 focus:ring-crimson"
+            aria-label="Contact Jus Buckingham via Email"
           >
-            Contact
+            Get in Touch
           </button>
         </div>
 
+        {/* Footer */}
         <footer className="flex items-center justify-center w-full h-24 border-t mt-6 border-gray-300">
           <p className="text-sm md:text-base text-gray-600">&copy; {new Date().getFullYear()} Jus Buckingham</p>
         </footer>
       </div>
 
+      {/* Inline CSS for Clock and Custom Colors */}
       <style jsx>{`
+        /* Clock Styles */
         .clock {
           width: 60px;
           height: 60px;
-          border: 6px solid black;
+          border: 6px solid #333;
           border-radius: 50%;
           position: relative;
           padding: 10px;
+          background-color: #fff;
         }
 
         .clock-face {
@@ -287,7 +302,7 @@ const Home: NextPage = () => {
 
         .hand {
           width: 50%;
-          background: black;
+          background: #333;
           position: absolute;
           top: 50%;
           transform-origin: 100%;
@@ -306,10 +321,10 @@ const Home: NextPage = () => {
 
         .second-hand {
           height: 2px;
-          background: red;
+          background: #e63946;
         }
 
-        /* Custom colors for crimson */
+        /* Custom Colors for Crimson */
         .text-crimson {
           color: #dc143c;
         }
