@@ -104,13 +104,7 @@ const Home: NextPage = () => {
         <section id="about" className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-crimson">About</h2>
           <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-            Jus Buckingham is an Artist, Technologist, and Entrepreneur driven by a passion for innovation and creativity. Originally from Lansing, Michigan, Jus has explored vibrant cities like Las Vegas, Vancouver, and Chicago before establishing his base in Los Angeles.
-            <br />
-            <br />
-            From a young age, Jus immersed himself in the arts, drawing inspiration from jazz legends such as John Coltrane and Eric Dolphy. His diverse creative pursuits include acting in plays and films, performing in bands, and founding King Conundrum in Chicago—a creative collective dedicated to producing live shows, podcasts, albums, and engaging travel content.
-            <br />
-            <br />
-            Currently, Jus is building <a href="https://kofa.ai/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on delivering purpose-driven AI solutions. Alongside his entrepreneurial ventures, Jus offers his expertise as a Software Engineer and Technical Consultant, committed to driving innovation across multiple disciplines.
+            Jus Buckingham is an Artist, Technologist, and Entrepreneur whose creativity and dedication to innovation have driven his journey. Inspired by jazz greats like Coltrane and Dolphy, he pursued a diverse path in the arts, acting in films, performing in bands, and founding King Conundrum—a Chicago-based collective for live shows, podcasts, and travel content. Currently, Jus is building <a href="https://kofa.ai/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on delivering purpose-driven AI solutions, while also providing his expertise as a Software Engineer and Technical Consultant.
           </p>
         </section>
 
@@ -238,7 +232,6 @@ const Home: NextPage = () => {
         <section id="selected-works" className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-crimson">Selected Works</h2>
           <ul className="text-lg md:text-xl leading-relaxed text-gray-700 list-disc list-inside ml-6">
-            {/* Interviews */}
             <li>
               <a
                 href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584"
@@ -249,7 +242,6 @@ const Home: NextPage = () => {
                 Keep the Faith
               </a>
             </li>
-            {/* Other Selected Works */}
             <li>
               <a
                 href="https://music.apple.com/us/playlist/jusla/pl.u-8aAVodjIoaMmWY"
