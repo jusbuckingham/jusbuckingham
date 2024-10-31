@@ -104,7 +104,7 @@ const Home: NextPage = () => {
         <section id="about" className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-lg">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-crimson">About</h2>
           <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-            Jus Buckingham is an Artist, Technologist, and Entrepreneur whose creativity and dedication to innovation have driven his journey. Inspired by jazz greats like Coltrane and Dolphy, he pursued a diverse path in the arts, acting in films, performing in bands, and founding King Conundrum—a Chicago-based collective for live shows, podcasts, and travel content. Currently, Jus is building <a href="https://kofa.ai/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on delivering purpose-driven AI solutions, while also providing his expertise as a Software Engineer and Technical Consultant.
+            Jus Buckingham is an Artist, Technologist, and Entrepreneur whose creativity and dedication to innovation have driven his journey. Inspired by jazz greats like John Coltrane and Eric Dolphy, he pursued a diverse path in the arts, acting in films, performing in bands, and founding King Conundrum—a Chicago-based collective for live shows, podcasts, and travel content. Currently, Jus is building <a href="https://kofa.ai/" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline hover:text-crimson">kofa.ai</a>, a startup focused on delivering purpose-driven AI solutions, while also providing his expertise as a Software Engineer and Technical Consultant.
           </p>
         </section>
 
