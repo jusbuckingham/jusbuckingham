@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           Jus Buckingham is a multidisciplinary artist, technologist, and
           entrepreneur driven by a passion for innovation and creativity.
           Inspired by jazz legends like John Coltrane, he has explored diverse
-          paths—from acting in plays and performing in bands to founding King
+          paths—from acting in films and performing in bands to founding King
           Conundrum, a Chicago-based arts collective. Now, Jus leads{' '}
           <a
             href="https://kofa.ai/"
@@ -113,14 +113,16 @@ const Home: NextPage = () => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <div className="flex flex-col items-center min-h-screen py-12 bg-gray-50 text-gray-900">
-        {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-extrabold my-4 text-crimson">
-          Jus Buckingham
-        </h1>
-        <p className="mt-2 text-lg md:text-2xl">
-          Artist, Technologist & Entrepreneur
-        </p>
+      <div className="flex flex-col items-center min-h-screen py-12 bg-gray-50 text-gray-900 space-y-6">
+        {/* Title and Subtitle */}
+        <div className="text-center">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-crimson">
+            Jus Buckingham
+          </h1>
+          <p className="mt-2 text-lg md:text-2xl">
+            Artist, Technologist & Entrepreneur
+          </p>
+        </div>
 
         {/* Profile Image */}
         <Image
