@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           Jus Buckingham is a multidisciplinary artist, technologist, and
           entrepreneur driven by a passion for innovation and creativity.
           Inspired by jazz legends like John Coltrane, he has explored diverse
-          paths—from acting in films and performing in bands to founding King
+          paths—from acting in plays and performing in bands to founding King
           Conundrum, a Chicago-based arts collective. Now, Jus leads{' '}
           <a
             href="https://kofa.ai/"
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           >
             kofa.ai
           </a>
-          , crafting AI solutions with purpose.
+          , which explores the concept of woke AI.
         </p>
       ),
     },
@@ -36,8 +36,8 @@ const Home: NextPage = () => {
       title: 'Interests',
       content: (
         <ul className="list-disc list-inside ml-6">
-          <li>Jazz</li>
-          <li>Chess</li>
+          <li>Art</li>
+          <li>Business</li>
           <li>Technology</li>
         </ul>
       ),
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
               rel="noopener noreferrer"
               className="text-indigo-600 underline hover:text-crimson"
             >
-              Jusla
+              Ju$la
             </a>
           </li>
         </ul>
@@ -125,14 +125,15 @@ const Home: NextPage = () => {
         </div>
 
         {/* Profile Image */}
-        <Image
-          src="/images/jusbuckingham-k-town.jpeg"
-          alt="Jus Buckingham in Koreatown"
-          width={192}
-          height={256}
-          className="rounded-xl shadow-lg"
-        />
-
+        <div className="flex justify-center items-center bg-gray-50 rounded-xl shadow-lg border-4 border-gray-200 p-2">
+          <Image
+            src="/images/jus-buckingham-malibu.png"
+            alt="Jus Buckingham with his dog in Malibu"
+            width={500} 
+            height={500} 
+            className="object-contain rounded-lg"
+          />
+        </div>
         {/* Sections */}
         {sections.map((section) => (
           <section
