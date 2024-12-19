@@ -36,9 +36,9 @@ const Home: NextPage = () => {
       title: 'Interests',
       content: (
         <ul className="list-disc list-inside ml-6">
-          <li>Art</li>
-          <li>Business</li>
           <li>Technology</li>
+          <li>Law</li>
+          <li>Theology</li>
         </ul>
       ),
     },
@@ -48,22 +48,43 @@ const Home: NextPage = () => {
       content: (
         <>
           {[
-            { category: 'Books', items: ['Atlas Shrugged', 'Siddhartha', 'Post Office'] },
-            { category: 'Movies', items: ['Malcolm X', 'On the Waterfront', 'Days of Heaven'] },
-            { category: 'Albums', items: ['Voodoo', 'Giant Steps', 'Morning View'] },
+            { 
+              category: 'Books', 
+              items: [
+                { name: 'Atlas Shrugged', url: 'https://en.wikipedia.org/wiki/Atlas_Shrugged' },
+                { name: 'Siddhartha', url: 'https://en.wikipedia.org/wiki/Siddhartha_(novel)' },
+                { name: 'Post Office', url: 'https://en.wikipedia.org/wiki/Post_Office_(novel)' },
+              ] 
+            },
+            { 
+              category: 'Movies', 
+              items: [
+                { name: 'Malcolm X', url: 'https://en.wikipedia.org/wiki/Malcolm_X_(1992_film)' },
+                { name: 'On the Waterfront', url: 'https://en.wikipedia.org/wiki/On_the_Waterfront' },
+                { name: 'Days of Heaven', url: 'https://en.wikipedia.org/wiki/Days_of_Heaven' },
+              ] 
+            },
+            { 
+              category: 'Albums', 
+              items: [
+                { name: 'Voodoo', url: 'https://en.wikipedia.org/wiki/Voodoo_(D%27Angelo_album)' },
+                { name: 'Giant Steps', url: 'https://en.wikipedia.org/wiki/Giant_Steps' },
+                { name: 'Morning View', url: 'https://en.wikipedia.org/wiki/Morning_View' },
+              ] 
+            },
           ].map(({ category, items }) => (
             <div key={category}>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">{category}</h3>
               <ul className="list-disc list-inside ml-6">
-                {items.map((item) => (
-                  <li key={item}>
+                {items.map(({ name, url }) => (
+                  <li key={name}>
                     <a
-                      href={`https://en.wikipedia.org/wiki/${item.replace(/\s+/g, '_')}`}
+                      href={url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-indigo-600 underline hover:text-crimson"
                     >
-                      {item}
+                      {name}
                     </a>
                   </li>
                 ))}
