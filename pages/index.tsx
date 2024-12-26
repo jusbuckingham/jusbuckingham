@@ -14,20 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          Jus Buckingham is a multidisciplinary artist, technologist, and
-          entrepreneur driven by a passion for innovation and creativity.
-          Inspired by jazz legends like John Coltrane, he has explored diverse
-          paths—from acting in plays and performing in bands to founding King
-          Conundrum, a Chicago-based arts collective. Now, Jus leads{' '}
-          <a
-            href="https://kofa.ai/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-indigo-600 underline hover:text-crimson"
-          >
-            kofa.ai
-          </a>
-          , which explores the concept of woke AI.
+          I&apos;m Jus, a multidisciplinary artist, technologist, and entrepreneur passionate about innovation and creativity. Inspired by jazz legends like John Coltrane, I&apos;ve pursued diverse paths—acting, performing, and founding King Conundrum, a Chicago-based arts collective.
         </p>
       ),
     },
@@ -36,8 +23,8 @@ const Home: NextPage = () => {
       title: 'Interests',
       content: (
         <ul className="list-disc list-inside ml-6">
+          <li>Art</li>
           <li>Technology</li>
-          <li>Law</li>
           <li>Theology</li>
         </ul>
       ),
@@ -127,7 +114,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Jus Buckingham - Artist, Technologist & Entrepreneur</title>
+        <title>Jus Buckingham - Renaissance Man</title>
         <meta
           name="description"
           content="Discover the world of Jus Buckingham, an Artist, Technologist, and Entrepreneur passionate about software engineering, music, and innovative startups."
@@ -141,7 +128,7 @@ const Home: NextPage = () => {
             Jus Buckingham
           </h1>
           <p className="mt-2 text-lg md:text-2xl">
-            Artist, Technologist & Entrepreneur
+          Renaissance Man
           </p>
         </div>
 
