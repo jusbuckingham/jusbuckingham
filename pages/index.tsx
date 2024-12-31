@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          I&apos;m Jus, a multidisciplinary artist, technologist, and entrepreneur passionate about innovation and creativity. Inspired by jazz legends like John Coltrane, I&apos;ve pursued diverse paths—acting, performing, and founding King Conundrum, a Chicago-based arts collective.
+          I&apos;m Jus, an artist, technologist, and entrepreneur passionate about innovation and creativity. Inspired by jazz legends like John Coltrane, I&apos;ve pursued diverse paths—acting, performing, and founding King Conundrum, a Chicago-based arts collective.  Currently I am a Software Engineer working on Kofa.ai a research startup focused on Woke AI solutions. 
         </p>
       ),
     },
@@ -23,8 +23,8 @@ const Home: NextPage = () => {
       title: 'Interests',
       content: (
         <ul className="list-disc list-inside ml-6">
-          <li>Art</li>
           <li>Technology</li>
+          <li>Law</li>
           <li>Theology</li>
         </ul>
       ),
@@ -88,22 +88,32 @@ const Home: NextPage = () => {
         <ul className="list-disc list-inside ml-6">
           <li>
             <a
+              href="https://github.com/jusbuckingham"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 underline hover:text-crimson"
+            >
+              Github
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://kofa.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 underline hover:text-crimson"
+            >
+              Kofa.ai
+            </a>
+          </li>
+          <li>
+            <a
               href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584"
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-600 underline hover:text-crimson"
             >
-              Keep the Faith
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://music.apple.com/us/playlist/jusla/pl.u-8aAVodjIoaMmWY"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-indigo-600 underline hover:text-crimson"
-            >
-              Ju$la
+              The ABE Podcast - Keep the Faith
             </a>
           </li>
         </ul>
@@ -136,7 +146,7 @@ const Home: NextPage = () => {
         <div className="flex justify-center items-center bg-gray-50 rounded-xl shadow-lg border-4 border-gray-200 p-2">
           <Image
             src="/images/jus-buckingham-malibu.png"
-            alt="Jus Buckingham with his dog in Malibu"
+            alt="Jus Buckingham with Keilani in Malibu"
             width={500} 
             height={500} 
             className="object-contain rounded-lg"
