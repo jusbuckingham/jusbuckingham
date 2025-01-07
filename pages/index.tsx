@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          I&apos;m Jus, an artist, technologist, and entrepreneur passionate about innovation and creativity. Inspired by jazz legends like John Coltrane, I&apos;ve pursued diverse paths—acting, performing, and founding King Conundrum, a Chicago-based arts collective.  Currently I am a Software Engineer working on Kofa.ai a research startup focused on Woke AI solutions. 
+          I&apos;m Jus, an artist, technologist, and entrepreneur passionate about innovation and creativity. Inspired by jazz legends like John Coltrane, I&apos;ve pursued diverse paths—acting, performing, and founding King Conundrum, a Chicago-based arts collective.  Currently I am a Software Engineer working on Kofa.ai a research startup focused on conscious AI solutions. 
         </p>
       ),
     },
