@@ -23,9 +23,9 @@ const Home: NextPage = () => {
       title: 'Interests',
       content: (
         <ul className="list-disc list-inside ml-6">
+          <li>Business</li>
           <li>Technology</li>
           <li>Law</li>
-          <li>Theology</li>
         </ul>
       ),
     },
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
               items: [
                 { name: 'Voodoo', url: 'https://en.wikipedia.org/wiki/Voodoo_(D%27Angelo_album)' },
                 { name: 'Giant Steps', url: 'https://en.wikipedia.org/wiki/Giant_Steps' },
-                { name: 'Morning View', url: 'https://en.wikipedia.org/wiki/Morning_View' },
+                { name: 'Aja', url: 'https://en.wikipedia.org/wiki/Aja_(album)' },
               ]
             },
           ].map(({ category, items }) => (
