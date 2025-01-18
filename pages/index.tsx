@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          I&apos;m Jus, an artist, technologist, and entrepreneur passionate about innovation and creativity. Inspired by jazz legends like John Coltrane, I&apos;ve pursued diverse paths—acting, performing, and founding King Conundrum, a Chicago-based arts collective.  Currently I am a Software Engineer working on Kofa.ai a research startup focused on conscious AI solutions. 
+          I&apos;m Jus, an artist, technologist, and entrepreneur passionate about innovation and creativity. Inspired by jazz legends like John Coltrane, I&apos;ve pursued diverse paths—acting, performing, and founding King Conundrum, a Chicago-based arts collective.  Currently I am a Software Engineer working on Kofa.ai a research startup focused on conscious AI solutions.
         </p>
       ),
     },
@@ -35,29 +35,29 @@ const Home: NextPage = () => {
       content: (
         <>
           {[
-            { 
-              category: 'Books', 
+            {
+              category: 'Books',
               items: [
                 { name: 'Atlas Shrugged', url: 'https://en.wikipedia.org/wiki/Atlas_Shrugged' },
                 { name: 'Siddhartha', url: 'https://en.wikipedia.org/wiki/Siddhartha_(novel)' },
                 { name: 'Post Office', url: 'https://en.wikipedia.org/wiki/Post_Office_(novel)' },
-              ] 
+              ]
             },
-            { 
-              category: 'Movies', 
+            {
+              category: 'Movies',
               items: [
-                { name: 'Malcolm X', url: 'https://en.wikipedia.org/wiki/Malcolm_X_(1992_film)' },
+                { name: 'The Passion of the Christ', url: 'https://en.wikipedia.org/wiki/The_Passion_of_the_Christ' },
                 { name: 'On the Waterfront', url: 'https://en.wikipedia.org/wiki/On_the_Waterfront' },
-                { name: 'Days of Heaven', url: 'https://en.wikipedia.org/wiki/Days_of_Heaven' },
-              ] 
+                { name: 'Malcolm X', url: 'https://en.wikipedia.org/wiki/Malcolm_X_(1992_film)' },
+              ]
             },
-            { 
-              category: 'Albums', 
+            {
+              category: 'Albums',
               items: [
                 { name: 'Voodoo', url: 'https://en.wikipedia.org/wiki/Voodoo_(D%27Angelo_album)' },
                 { name: 'Giant Steps', url: 'https://en.wikipedia.org/wiki/Giant_Steps' },
                 { name: 'Morning View', url: 'https://en.wikipedia.org/wiki/Morning_View' },
-              ] 
+              ]
             },
           ].map(({ category, items }) => (
             <div key={category}>
@@ -98,12 +98,12 @@ const Home: NextPage = () => {
           </li>
           <li>
             <a
-              href="https://kofa.ai/"
+              href="https://docs.google.com/document/d/17Ur4obaKkDfs_Nfe3s-yuud_RVX_rxsXITi69JQT5ng/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-600 underline hover:text-crimson"
             >
-              Kofa.ai
+              The Kofa Papers
             </a>
           </li>
           <li>
@@ -138,7 +138,7 @@ const Home: NextPage = () => {
             Jus Buckingham
           </h1>
           <p className="mt-2 text-lg md:text-2xl">
-          Renaissance Man
+            Renaissance Man
           </p>
         </div>
 
@@ -147,8 +147,8 @@ const Home: NextPage = () => {
           <Image
             src="/images/jus-buckingham-malibu.png"
             alt="Jus Buckingham with Keilani in Malibu"
-            width={500} 
-            height={500} 
+            width={500}
+            height={500}
             className="object-contain rounded-lg"
           />
         </div>
