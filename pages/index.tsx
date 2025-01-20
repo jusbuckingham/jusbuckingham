@@ -88,12 +88,12 @@ const Home: NextPage = () => {
         <ul className="list-disc list-inside ml-6">
           <li>
             <a
-              href="https://github.com/jusbuckingham"
+              href="https://music.apple.com/us/playlist/ju%24la/pl.u-8aAVodjIoaMmWY"
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-600 underline hover:text-crimson"
             >
-              Github
+              Ju$la
             </a>
           </li>
           <li>
