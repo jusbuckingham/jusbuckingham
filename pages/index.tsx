@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          I&apos;m Jus, a creative thinker who loves building things—whether it&apos;s music, tech, or new ideas. I grew up inspired by jazz legends like John Coltrane, which led me to explore acting, performing, and starting King Conundrum, a Chicago-based arts collective. These days, I&apos;m a Founder and Software Architect working on Kofa.ai, a research startup focused on developing AI with real-world impact.
+          Jus is a creative thinker and technologist with a passion for building—from music and performance to cutting-edge software. Inspired by jazz legends like John Coltrane, his artistic journey led him to acting, live performances, and founding King Conundrum, a Chicago-based arts collective. Today, he is the Founder of Kofa.ai, dedicated to developing AI with real-world impact.
         </p>
       ),
     },
@@ -23,9 +23,9 @@ const Home: NextPage = () => {
       title: 'Interests',
       content: (
         <ul className="list-disc list-inside ml-6">
+          <li>Art</li>
           <li>Business</li>
           <li>Technology</li>
-          <li>Law</li>
         </ul>
       ),
     },
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
               items: [
                 { name: 'Voodoo', url: 'https://en.wikipedia.org/wiki/Voodoo_(D%27Angelo_album)' },
                 { name: 'Giant Steps', url: 'https://en.wikipedia.org/wiki/Giant_Steps' },
-                { name: 'Aja', url: 'https://en.wikipedia.org/wiki/Aja_(album)' },
+                { name: 'Pieces of a Man', url: 'https://en.wikipedia.org/wiki/Pieces_of_a_Man' },
               ]
             },
           ].map(({ category, items }) => (
