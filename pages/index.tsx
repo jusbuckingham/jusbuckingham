@@ -145,8 +145,8 @@ const Home: NextPage = () => {
         {/* Profile Image */}
         <div className="flex justify-center items-center bg-gray-50 rounded-xl shadow-lg border-4 border-gray-200 p-2">
           <Image
-            src="/images/jus-buckingham-malibu.png"
-            alt="Jus Buckingham with Keilani in Malibu"
+            src="/images/jus-buckingham-chateau-marmont.jpeg"
+            alt="Jus Buckingham at Chateau Marmont"
             width={500}
             height={500}
             className="object-contain rounded-lg"
