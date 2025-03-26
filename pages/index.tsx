@@ -109,12 +109,12 @@ const Home: NextPage = () => {
           </li>
           <li>
             <a
-              href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584"
+              href="https://kofa.ai/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-600 underline hover:text-crimson"
             >
-              The ABE Podcast - Keep the Faith
+              kofa.ai
             </a>
           </li>
         </ul>
