@@ -1,55 +1,57 @@
 # jusbuckingham.com
 
-Welcome to my personal website! This digital portfolio showcases my background, ongoing projects, and selected works. Built with a modern tech stack, it reflects my identity as an Artist, Technologist, and Entrepreneur.
+Welcome to my personal site — a digital reflection of who I am: an Artist, Technologist, and Entrepreneur. This portfolio highlights my background, current projects, and selected works, all wrapped in a clean, responsive design.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- **Next.js**: A React framework for server-side rendering and static site generation, delivering fast performance and seamless user experiences.
-- **Tailwind CSS**: A utility-first CSS framework for highly customizable and responsive design.
-- **TypeScript**: Strong typing enhances code reliability and maintainability.
-- **Vercel**: A modern deployment platform optimized for speed, scalability, and smooth CI/CD workflows.
+- **Next.js** – React framework with server-side rendering and static generation
+- **Tailwind CSS** – Utility-first styling for flexible, responsive design
+- **TypeScript** – Strongly typed JavaScript for better code safety and clarity
+- **Vercel** – Fast, scalable deployment with built-in CI/CD
 
-## Key Features
+## ✨ Features
 
-- **Responsive Design**: Optimized for all devices, offering a consistent and engaging experience across desktops, tablets, and mobile phones.
-- **Personalized Content**: Highlights my unique background, interests, and works in an easy-to-navigate layout.
-- **SEO-Optimized**: Structured data and meta tags improve search engine visibility, making it easier for users to discover my site.
-- **Fast Deployment**: Hosted on Vercel, ensuring near-instant page loads and reliability.
+- **Fully Responsive** – Optimized for desktop, tablet, and mobile
+- **Personalized Content** – Showcases my creative and technical journey
+- **SEO Optimized** – Structured metadata to improve search visibility
+- **Fast Deployment** – Hosted on Vercel for instant performance
 
-## Getting Started
+## 🚀 Getting Started Locally
 
-To run the project locally:
-
-1. **Clone the Repository**:
+1. **Clone the repo**  
     ```bash
     git clone https://github.com/jusbuckingham/jusbuckingham.git
     cd jusbuckingham
     ```
 
-2. **Install Dependencies**:
+2. **Install dependencies**  
     ```bash
     npm install
     ```
 
-3. **Run the Development Server**:
+3. **Start the dev server**  
     ```bash
     npm run dev
     ```
 
-4. **Visit** `http://localhost:3000` in your browser to explore the site.
+4. Open `http://localhost:3000` in your browser
 
-## Deployment
+## 🌍 Deployment
 
-This site is live on Vercel. To deploy your own version:
+Already live on [Vercel](https://vercel.com), but you can deploy it yourself:
 
-1. **Install Vercel CLI**:
+1. **Install Vercel CLI**  
     ```bash
     npm install -g vercel
     ```
 
-2. **Deploy the Project**:
+2. **Deploy**  
     ```bash
     vercel
     ```
 
-3. Follow the CLI prompts to link your project with your Vercel account and complete the deployment process.
+3. Follow the prompts to link your project and go live.
+
+---
+
+Feel free to fork or build on this — and thanks for stopping by.
