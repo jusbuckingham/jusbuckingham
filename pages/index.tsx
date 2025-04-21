@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          Jus is a creative thinker and technologist with a passion for building—from music and performance to cutting-edge software. Inspired by jazz legends like John Coltrane and Eric Dolphy, his artistic journey led him to acting, live performances, and founding King Conundrum, a Chicago-based arts collective. Today, he is a technical consultant and the founder of Kofa.ai, dedicated to developing AI software with real-world impact.
+          Jus is a creative thinker and technologist with a passion for building—from music and performance to cutting-edge software. Inspired by jazz legends like John Coltrane and Eric Dolphy, his artistic journey led him to acting, live performances, and founding King Conundrum, a Chicago-based arts collective. Today, he is a technical consultant and the founder of Kofa.ai, an open source project dedicated to developing AI software with real-world impact.
         </p>
       ),
     },
