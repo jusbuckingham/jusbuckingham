@@ -23,8 +23,8 @@ const Home: NextPage = () => {
       title: 'Interests',
       content: (
         <ul className="list-disc list-inside ml-6">
+          <li>Chess</li>
           <li>Art</li>
-          <li>Finance</li>
           <li>Technology</li>
         </ul>
       ),
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
               category: 'Movies',
               items: [
                 { name: 'On the Waterfront', url: 'https://en.wikipedia.org/wiki/On_the_Waterfront' },
-                { name: 'The Passion of the Christ', url: 'https://en.wikipedia.org/wiki/The_Passion_of_the_Christ' },
+                { name: 'Mo Better Blues', url: 'https://en.wikipedia.org/wiki/Mo%27_Better_Blues' },
                 { name: 'Dancer in the Dark', url: 'https://en.wikipedia.org/wiki/Dancer_in_the_Dark' },
                 
               ]
@@ -56,8 +56,8 @@ const Home: NextPage = () => {
               category: 'Albums',
               items: [
                 { name: 'Voodoo', url: 'https://en.wikipedia.org/wiki/Voodoo_(D%27Angelo_album)' },
-                { name: 'Giant Steps', url: 'https://en.wikipedia.org/wiki/Giant_Steps' },
-                { name: 'Pieces of a Man', url: 'https://en.wikipedia.org/wiki/Pieces_of_a_Man' },
+                { name: 'Aja', url: 'https://en.wikipedia.org/wiki/Aja_(album)' },
+                { name: 'Leak 04-13 (Bait Ones)', url: 'https://en.wikipedia.org/wiki/Leak_04-13_(Bait_Ones)' },
               ]
             },
           ].map(({ category, items }) => (
@@ -172,7 +172,7 @@ const Home: NextPage = () => {
           onClick={handleEmailClick}
           className="mt-12 px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-lg hover:bg-dark-crimson focus:ring-2 focus:ring-crimson"
         >
-          Get in Touch
+          Contact
         </button>
 
         {/* Footer */}
