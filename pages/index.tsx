@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          Jus is a creative thinker and technologist with a passion for building—from music and performance to cutting-edge software. Inspired by jazz legends like John Coltrane and Eric Dolphy, his artistic journey led him to acting, live performances, and founding King Conundrum, a Chicago-based arts collective. Today, he is a technical consultant and the founder of Kofa.ai, an open source project dedicated to developing AI software with real-world impact.
+          Jus Buckingham is a creative technologist and storyteller with a deep love for building — whether it&apos;s software, soundscapes, or ideas. His early passion for jazz led him to the saxophone and live performance, eventually branching into acting and launching King Conundrum, a Chicago-based arts collective. Today, he works as a technical consultant and leads Kofa.ai, an open source initiative focused on developing AI tools that serve real communities and make a measurable impact.
         </p>
       ),
     },
