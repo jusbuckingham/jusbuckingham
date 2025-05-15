@@ -23,8 +23,8 @@ const Home: NextPage = () => {
       title: 'Interests',
       content: (
         <ul className="list-disc list-inside ml-6">
-          <li>Chess</li>
           <li>Art</li>
+          <li>Business</li>
           <li>Technology</li>
         </ul>
       ),
