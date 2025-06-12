@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          Jus Buckingham is a creative technologist and storyteller with a deep love for building — whether it&apos;s software, soundscapes, or ideas. His early passion for jazz led him to the saxophone and live performance, eventually branching into acting and launching King Conundrum, a Chicago-based arts collective. Today, he works as a technical consultant and leads Kofa.ai, an open source initiative focused on developing AI tools that serve real communities and make a measurable impact.
+          Jus Buckingham is a renaissance man blending art, technology, and entrepreneurship. From jazz saxophone stages to founding King Conundrum and leading Kofa.ai, he crafts meaningful experiences through software and storytelling.
         </p>
       ),
     },
