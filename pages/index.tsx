@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          Jus Buckingham is a renaissance man blending art, technology, and entrepreneurship. From jazz saxophone stages to founding King Conundrum and leading Kofa.ai, he crafts meaningful experiences through software and storytelling.
+          Jus Buckingham is a modern renaissance man—artist, technologist, and entrepreneur. From playing jazz saxophone to founding King Conundrum and Kofa.ai, he creates impactful experiences through code, culture, and creativity.
         </p>
       ),
     },
@@ -125,10 +125,10 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Jus Buckingham - Renaissance Man</title>
+        <title>Jus Buckingham | Artist, Technologist, Entrepreneur</title>
         <meta
           name="description"
-          content="Discover the world of Jus Buckingham, an Artist, Technologist, and Entrepreneur passionate about software engineering, music, and innovative startups."
+          content="Explore the work of Jus Buckingham—jazz musician, full-stack engineer, and founder of cultural and AI-driven ventures like King Conundrum and Kofa.ai."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
@@ -146,8 +146,8 @@ const Home: NextPage = () => {
         {/* Profile Image */}
         <div className="flex justify-center items-center bg-gray-50 rounded-xl shadow-lg border-4 border-gray-200 p-2">
           <Image
-            src="/images/jus-buckingham-chateau-marmont.jpeg"
-            alt="Jus Buckingham at Chateau Marmont"
+            src="/images/jus-buckingham-sfjazz.jpeg"
+            alt="Jus Buckingham SFJAZZ"
             width={500}
             height={500}
             className="object-contain rounded-lg"

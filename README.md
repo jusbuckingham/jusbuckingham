@@ -1,23 +1,25 @@
 # jusbuckingham.com
 
-Welcome to my personal site - a digital reflection of who I am: Artist, Technologist, Entrepreneur. This portfolio highlights my background, current projects, and selected works, all wrapped in a clean, responsive design.
+Welcome to my personal site — a modern, minimal digital home for my work as an artist, technologist, and entrepreneur. It highlights my background, showcases current projects, and presents selected works with clarity and purpose.
 
 ## 🛠️ Tech Stack
 
 - **Next.js** - React framework with server-side rendering and static generation
-- **Tailwind CSS** - Utility-first styling for flexible, responsive design
+- **Tailwind CSS** - Utility-first CSS framework for fast, responsive design
 - **TypeScript** - Strongly typed JavaScript for better code safety and clarity
 - **Vercel** - Fast, scalable deployment with built-in CI/CD
 
 ## ✨ Features
 
-- **Fully Responsive** - Optimized for desktop, tablet, and mobile
-- **Personalized Content** - Showcases my creative and technical journey
-- **SEO Optimized** - Structured metadata to improve search visibility
-- **Fast Deployment** - Hosted on Vercel for instant performance
-- **Accessibility Support** - Built-in accessibility widget for user control and compliance
+- **Responsive Design** – Seamlessly adapts to any screen size
+- **Curated Content** – Combines creativity and technology with personal touch
+- **SEO Ready** – Enhanced structure for better search engine visibility
+- **Instant Deployment** – Hosted on Vercel for speed and scale
+- **Accessible UI** – Includes accessibility features for a better experience
 
 ## 🚀 Getting Started Locally
+
+To run this project on your local machine:
 
 1. **Clone the repo**  
     ```bash
@@ -39,7 +41,7 @@ Welcome to my personal site - a digital reflection of who I am: Artist, Technolo
 
 ## 🌍 Deployment
 
-Already live on [Vercel](https://vercel.com), but you can deploy it yourself:
+The site is live on [Vercel](https://vercel.com), but you can also deploy it yourself:
 
 1. **Install Vercel CLI**  
     ```bash
@@ -51,10 +53,11 @@ Already live on [Vercel](https://vercel.com), but you can deploy it yourself:
     vercel
     ```
 
-
 3. Follow the prompts to link your project and go live.
 
 ## 🚧 Prerequisites
+
+Ensure you have the following installed before getting started:
 
 - Node.js v16 or higher
 - npm v8 or higher (or Yarn)
@@ -82,7 +85,7 @@ jusbuckingham/
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request. Make sure to:
+Contributions are welcome! To contribute:
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature/YourFeature`)
