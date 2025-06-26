@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          Jus Buckingham is a modern renaissance man—artist, technologist, and entrepreneur. From playing jazz saxophone to founding King Conundrum and Kofa.ai, he creates impactful experiences through code, culture, and creativity.
+          Jus Buckingham is an artist, technologist, and entrepreneur. He founded King Conundrum and now Kofa.ai, an AI news ticker exploring cultural narratives, Black perspectives, and emerging technology through curated updates.
         </p>
       ),
     },
