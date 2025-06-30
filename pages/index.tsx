@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          Jus Buckingham is an artist, technologist, and entrepreneur. He founded King Conundrum and now Kofa.ai, an AI news ticker exploring cultural narratives, Black perspectives, and emerging technology through curated updates.
+          Jus Buckingham is an artist, technologist, and entrepreneur. He founded the entertainment collective King Conundrum in Chicago and is currently building Kofa.ai, an AI-driven news startup.
         </p>
       ),
     },
