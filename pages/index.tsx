@@ -104,7 +104,7 @@ const Home: NextPage = () => {
               rel="noopener noreferrer"
               className="text-indigo-600 underline hover:text-crimson"
             >
-              ABE Podcast - Jus Buckingham
+              ABE Podcast
             </a>
           </li>
           <li>
