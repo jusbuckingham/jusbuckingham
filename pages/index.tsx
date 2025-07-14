@@ -109,12 +109,12 @@ const Home: NextPage = () => {
           </li>
           <li>
             <a
-              href="https://kofa.ai/"
+              href="https://docs.google.com/document/d/17Ur4obaKkDfs_Nfe3s-yuud_RVX_rxsXITi69JQT5ng/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-600 underline hover:text-crimson"
             >
-              kofa.ai
+              Kofa Papers
             </a>
           </li>
         </ul>
