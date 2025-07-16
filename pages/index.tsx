@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       title: 'About',
       content: (
         <p>
-          Jus Buckingham is an artist, technologist, and entrepreneur. He founded the entertainment collective King Conundrum in Chicago and is currently building Kofa.ai, an AI-driven news startup.
+          Jus Buckingham is a multidisciplinary creator—an artist, technologist, and entrepreneur. He founded the collective King Conundrum in Chicago and now leads Kofa.ai in Los Angeles, an emerging platform shaping how stories are curated and understood through AI.
         </p>
       ),
     },
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       id: 'favs',
       title: 'Favorites',
       content: (
-        <>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
               category: 'Books',
@@ -79,15 +79,15 @@ const Home: NextPage = () => {
               </ul>
             </div>
           ))}
-        </>
+        </div>
       ),
     },
     {
       id: 'selected-works',
       title: 'Selected Works',
       content: (
-        <ul className="list-disc list-inside ml-6">
-          <li>
+        <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <li className="list-disc list-inside ml-4">
             <a
               href="https://music.apple.com/us/playlist/ju%24la/pl.u-8aAVodjIoaMmWY"
               target="_blank"
@@ -97,7 +97,7 @@ const Home: NextPage = () => {
               Ju$la
             </a>
           </li>
-          <li>
+          <li className="list-disc list-inside ml-4">
             <a
               href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584"
               target="_blank"
@@ -107,7 +107,7 @@ const Home: NextPage = () => {
               ABE Podcast
             </a>
           </li>
-          <li>
+          <li className="list-disc list-inside ml-4">
             <a
               href="https://docs.google.com/document/d/17Ur4obaKkDfs_Nfe3s-yuud_RVX_rxsXITi69JQT5ng/edit?usp=sharing"
               target="_blank"
@@ -125,26 +125,26 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Jus Buckingham | Artist, Technologist, Entrepreneur</title>
+        <title>Jus Buckingham | Artist, Technologist, Visionary</title>
         <meta
           name="description"
-          content="Explore the work of Jus Buckingham—jazz musician, full-stack engineer, and founder of cultural and AI-driven ventures like King Conundrum and Kofa.ai."
+          content="The digital home of Jus Buckingham—renaissance man and founder of Kofa.ai. Discover selected works, favorite influences, and a vision driven by art, technology, and cultural innovation."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <div className="flex flex-col items-center min-h-screen py-12 bg-gray-50 text-gray-900 space-y-6">
+      <div className="flex flex-col items-center min-h-screen py-12 px-4 md:px-8 bg-gray-50 text-gray-900 space-y-6">
         {/* Title and Subtitle */}
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold text-crimson">
             Jus Buckingham
           </h1>
-          <p className="mt-2 text-lg md:text-2xl">
+          <p className="mt-2 text-lg md:text-2xl italic text-gray-700">
             Renaissance Man
           </p>
         </div>
 
         {/* Profile Image */}
-        <div className="flex justify-center items-center bg-gray-50 rounded-xl shadow-lg border-4 border-gray-200 p-2">
+        <div className="flex justify-center items-center bg-white rounded-xl shadow-lg border-4 border-gray-200 p-2">
           <Image
             src="/images/jus-buckingham-sfjazz.jpeg"
             alt="Jus Buckingham SFJAZZ"
@@ -181,11 +181,17 @@ const Home: NextPage = () => {
         </footer>
       </div>
       <style jsx>{`
+        html {
+          scroll-behavior: smooth;
+        }
         .text-crimson {
           color: #dc143c;
         }
         .hover\:bg-dark-crimson:hover {
           background-color: #a40e2c;
+        }
+        .underline:hover {
+          text-decoration-thickness: 2px;
         }
       `}</style>
     </Layout>

@@ -1,6 +1,6 @@
-# jusbuckingham.com
+# Jus Buckingham | Artist, Technologist, Visionary
 
-Welcome to my personal site — a modern, minimal digital home for my work as an artist, technologist, and entrepreneur. It highlights my background, showcases current projects, and presents selected works with clarity and purpose.
+Welcome to my digital home—a modern, minimal showcase for my work as an artist, technologist, and entrepreneur. Here you’ll find my background, current projects like Kofa.ai, and selected works that bridge art, business, and technology.
 
 ## 🛠️ Tech Stack
 
@@ -11,11 +11,11 @@ Welcome to my personal site — a modern, minimal digital home for my work as an
 
 ## ✨ Features
 
-- **Responsive Design** – Seamlessly adapts to any screen size
-- **Curated Content** – Combines creativity and technology with personal touch
-- **SEO Ready** – Enhanced structure for better search engine visibility
-- **Instant Deployment** – Hosted on Vercel for speed and scale
-- **Accessible UI** – Includes accessibility features for a better experience
+- **Minimal, Responsive Design** – Adapts seamlessly to any screen size
+- **AI-Driven Curation** – Powered by Kofa.ai for dynamic storytelling
+- **SEO Optimized** – Structure and metadata boost search visibility
+- **Instant Deployment** – Hosted on Vercel with CI/CD built in
+- **Accessibility Focused** – Built-in features for an inclusive experience
 
 ## 🚀 Getting Started Locally
 
@@ -83,9 +83,15 @@ jusbuckingham/
 └── package.json  # Project metadata and scripts
 ```
 
+## 💡 Interests
+
+- Art
+- Business
+- Technology
+
 ## 🤝 Contributing
 
-Contributions are welcome! To contribute:
+Feedback and contributions are welcome. To contribute:
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b feature/YourFeature`)
