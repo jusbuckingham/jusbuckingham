@@ -1,24 +1,24 @@
-# Jus Buckingham | Artist, Technologist, Entrepreneur
+# Jus Buckingham | Artist • Technologist • Entrepreneur
 
-Welcome to my personal website—a refined, minimal space showcasing my identity as an artist, technologist, and entrepreneur. Explore my projects like [Kofa.ai](https://kofa.ai), learn about my diverse background, and engage with selected creative and technical works.
+Welcome to my personal website — a minimal and refined space that reflects my work as an artist, technologist, and entrepreneur. Here you can explore projects like [Kofa.ai](https://kofa.ai), discover selected works, and learn about my creative and technical journey.
 
 ## 🛠️ Tech Stack
 
-- **Next.js** – Efficient React framework optimized for server-side rendering
-- **TypeScript** – Ensuring robust, scalable code
-- **Tailwind CSS** – Utility-first framework for sleek, responsive styling
-- **Vercel** – Seamless deployment with integrated CI/CD
+- **Next.js** – React framework with SSR & static rendering
+- **TypeScript** – Strongly typed, scalable code
+- **Tailwind CSS** – Utility-first, responsive styling
+- **Vercel** – CI/CD & hosting platform
 
 ## ✨ Features
 
-- **Clean, Modern Design** – Minimalist aesthetic optimized for all devices
-- **AI-Enhanced Content** – Dynamic storytelling powered by Kofa.ai
-- **SEO Best Practices** – Enhanced visibility through structured data
-- **Accessibility First** – Inclusive design principles embedded throughout
+- Minimalist, responsive design
+- AI-driven storytelling with Kofa.ai
+- SEO & structured data ready
+- Accessibility-focused UI
 
 ## 🚀 Local Setup
 
-Clone and run the site locally:
+Run the project locally:
 
 ```bash
 git clone https://github.com/jusbuckingham/jusbuckingham.git
@@ -31,28 +31,25 @@ Visit `http://localhost:3000` to view.
 
 ## 🌐 Deployment
 
-Deployed with [Vercel](https://vercel.com):
+Deploy with [Vercel](https://vercel.com):
 
 ```bash
 npm install -g vercel
 vercel
 ```
 
-Follow CLI prompts for live deployment.
 
 ## 📋 Prerequisites
 
-Ensure your environment has:
-
 - Node.js v16+
-- npm v8+ (or Yarn)
+- npm v8+
 
 ## 🔧 Available Scripts
 
-- `npm run dev` – Development server
-- `npm run build` – Production build
-- `npm run start` – Run production build locally
-- `npm run lint` – Code quality checks
+- `npm run dev` – Start dev server
+- `npm run build` – Create production build
+- `npm run start` – Run production build
+- `npm run lint` – Lint & check code quality
 
 ## 📁 Project Structure
 
@@ -68,17 +65,16 @@ jusbuckingham/
 
 ## 🌟 Interests
 
-- Creative Writing & Music
+- Writing & Music
 - Software Engineering & Data Science
 - Chess & Jazz
-- Terrence Malick's *Days of Heaven*
-- Theatre & Performance Arts
+- Terrence Malick’s *Days of Heaven*
+- Theatre & Performance
 
 ## 🤝 Contribute
 
-Interested in contributing?
-
-1. Fork and branch (`git checkout -b feature/YourFeature`)
-2. Commit changes (`git commit -m 'Your update'`)
-3. Push (`git push origin feature/YourFeature`)
-4. Open a pull request—I'd love your input!
+Contributions welcome!  
+1. Fork & branch (`git checkout -b feature/YourFeature`)  
+2. Commit (`git commit -m 'Add feature'`)  
+3. Push (`git push origin feature/YourFeature`)  
+4. Open a pull request  
