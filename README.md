@@ -1,20 +1,21 @@
 # Jus Buckingham | Artist • Technologist • Entrepreneur
 
-Welcome to my personal website — a minimal and refined space that reflects my work as an artist, technologist, and entrepreneur. Here you can explore projects like [Kofa.ai](https://kofa.ai), discover selected works, and learn about my creative and technical journey.
+Welcome to the personal website of Jus — a multidisciplinary creator blending art, technology, and entrepreneurship. Originally from Lansing, Michigan, with a background in theatre and experience performing in bands in Las Vegas, he brings the improvisational spirit of jazz into his work as a full‑stack engineer and entrepreneur. He founded King Conundrum in Chicago and now leads [Kofa.ai](https://kofa.ai) in Los Angeles, building AI‑driven tools rooted in Black consciousness.
 
 ## 🛠️ Tech Stack
 
-- **Next.js** – React framework with SSR & static rendering
-- **TypeScript** – Strongly typed, scalable code
-- **Tailwind CSS** – Utility-first, responsive styling
-- **Vercel** – CI/CD & hosting platform
+- **Next.js** – Flexible React framework that enables fast builds with server‑side rendering and static generation, perfect for SEO and performance  
+- **TypeScript** – Strongly typed language that adds reliability and scalability to the codebase, making long‑term maintenance smoother  
+- **Tailwind CSS** – Utility‑first CSS framework that allows rapid, consistent, and responsive UI design while keeping the markup clean  
+- **Vercel** – Seamless hosting and CI/CD platform that integrates natively with Next.js, ensuring fast global deployments and previews  
 
 ## ✨ Features
 
-- Minimalist, responsive design
-- AI-driven storytelling with Kofa.ai
-- SEO & structured data ready
-- Accessibility-focused UI
+- **Minimalist, responsive design** – clean aesthetic that adapts seamlessly across devices  
+- **Accessibility-first UI** – inclusive features to ensure usability for everyone  
+- **SEO & metadata optimized** – structured data and meta tags for discoverability  
+- **Integrated with Kofa.ai** – AI-powered tools rooted in Black consciousness  
+- **Performance tuned** – lightweight components, optimized images, and fast loading  
 
 ## 🚀 Local Setup
 
@@ -55,21 +56,20 @@ vercel
 
 ```
 jusbuckingham/
-├── components/   # Reusable UI components
-├── pages/        # Site pages
-├── public/       # Static assets
-├── styles/       # Stylesheets
-├── README.md     # Documentation
-└── package.json  # Dependencies & scripts
+├── components/   # Reusable UI components such as Header, Footer, Layout, and custom widgets
+├── pages/        # Next.js pages; each file maps to a route (e.g., index.tsx = homepage)
+├── public/       # Static assets like images, icons, and social preview files
+├── styles/       # Global styles and Tailwind configuration overrides
+├── lib/          # Utility functions and helpers (API calls, data fetching, etc.)
+├── README.md     # Project documentation
+└── package.json  # Project metadata, dependencies, and npm scripts
 ```
 
 ## 🌟 Interests
 
-- Writing & Music
-- Software Engineering & Data Science
-- Chess & Jazz
-- Terrence Malick’s *Days of Heaven*
-- Theatre & Performance
+- Art
+- Business
+- Technology
 
 ## 🤝 Contribute
 
@@ -77,4 +77,4 @@ Contributions welcome!
 1. Fork & branch (`git checkout -b feature/YourFeature`)  
 2. Commit (`git commit -m 'Add feature'`)  
 3. Push (`git push origin feature/YourFeature`)  
-4. Open a pull request  
+4. Open a pull request 

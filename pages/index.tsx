@@ -3,19 +3,27 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../components/Layout';
 
-const Home: NextPage = () => {
-  const handleEmailClick = () => {
-    window.location.href = 'mailto:jus.buckingham@gmail.com';
-  };
+const linkClass = "text-indigo-600 underline decoration-1 underline-offset-2 hover:decoration-2 hover:text-crimson focus-visible:outline focus-visible:outline-2 focus-visible:outline-crimson";
 
+const Home: NextPage = () => {
   const sections = [
     {
       id: 'about',
       title: 'About',
       content: (
-        <p>
-          Jus Buckingham is a multidisciplinary creator—an artist, technologist, and entrepreneur. He founded the collective King Conundrum in Chicago and now leads Kofa.ai in Los Angeles, an emerging platform shaping how stories are curated and understood through AI.
-        </p>
+        <div>
+          <p>
+            A multidisciplinary creator blending art, technology, and entrepreneurship. Originally from Lansing, Michigan, with a background in theatre and experience performing in bands in Las Vegas, he is also a saxophonist who brings the improvisational spirit of jazz into his work as a full‑stack engineer and entrepreneur.
+          </p>
+          <p className="mt-4">
+            He founded King Conundrum in Chicago, a collective for live shows, podcasts, and albums. Now based in Los Angeles, he leads <a
+              href="https://www.kofa.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClass}
+            >Kofa.ai</a>, building AI‑driven tools rooted in Black consciousness to inform, protect, and inspire communities.
+          </p>
+        </div>
       ),
     },
     {
@@ -48,7 +56,7 @@ const Home: NextPage = () => {
               items: [
                 { name: 'On the Waterfront', url: 'https://en.wikipedia.org/wiki/On_the_Waterfront' },
                 { name: 'Mo Better Blues', url: 'https://en.wikipedia.org/wiki/Mo%27_Better_Blues' },
-                { name: 'Dancer in the Dark', url: 'https://en.wikipedia.org/wiki/Dancer_in_the_Dark' },
+                { name: 'The Prestige', url: 'https://en.wikipedia.org/wiki/The_Prestige_(film)' },
                 
               ]
             },
@@ -57,7 +65,7 @@ const Home: NextPage = () => {
               items: [
                 { name: 'Voodoo', url: 'https://en.wikipedia.org/wiki/Voodoo_(D%27Angelo_album)' },
                 { name: 'Aja', url: 'https://en.wikipedia.org/wiki/Aja_(album)' },
-                { name: 'Leak 04-13 (Bait Ones)', url: 'https://en.wikipedia.org/wiki/Leak_04-13_(Bait_Ones)' },
+                { name: 'Pieces of a Man', url: 'https://en.wikipedia.org/wiki/Pieces_of_a_Man' },
               ]
             },
           ].map(({ category, items }) => (
@@ -70,7 +78,7 @@ const Home: NextPage = () => {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-indigo-600 underline hover:text-crimson"
+                      className={linkClass}
                     >
                       {name}
                     </a>
@@ -92,7 +100,7 @@ const Home: NextPage = () => {
               href="https://www.kofa.ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-indigo-600 underline hover:text-crimson"
+              className={linkClass}
             >
               Kofa.ai
             </a>
@@ -102,7 +110,7 @@ const Home: NextPage = () => {
               href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-indigo-600 underline hover:text-crimson"
+              className={linkClass}
             >
               ABE Podcast
             </a>
@@ -112,7 +120,7 @@ const Home: NextPage = () => {
               href="https://music.apple.com/us/playlist/ju%24la/pl.u-8aAVodjIoaMmWY"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-indigo-600 underline hover:text-crimson"
+              className={linkClass}
             >
               Ju$la
             </a>
@@ -128,20 +136,20 @@ const Home: NextPage = () => {
         Skip to content
       </a>
       <Head>
-        <title>Jus Buckingham | Artist, Technologist, Visionary</title>
+        <title>Jus Buckingham | Artist, Technologist, Entrepreneur</title>
         <meta
           name="description"
           content="The digital home of Jus Buckingham—renaissance man and founder of Kofa.ai. Discover selected works, favorite influences, and a vision driven by art, technology, and cultural innovation."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://jusbuckingham.com/" />
-        <meta property="og:title" content="Jus Buckingham | Artist, Technologist, Visionary" />
+        <meta property="og:title" content="Jus Buckingham | Artist, Technologist, Entrepreneur" />
         <meta property="og:description" content="The digital home of Jus Buckingham—renaissance man and founder of Kofa.ai. Discover selected works, favorite influences, and a vision driven by art, technology, and cultural innovation." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://jusbuckingham.com/" />
         <meta property="og:image" content="https://jusbuckingham.com/images/grama-and-jus.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Jus Buckingham | Artist, Technologist, Visionary" />
+        <meta name="twitter:title" content="Jus Buckingham | Artist, Technologist, Entrepreneur" />
         <meta name="twitter:description" content="The digital home of Jus Buckingham—renaissance man and founder of Kofa.ai." />
         <meta name="twitter:image" content="https://jusbuckingham.com/images/grama-and-jus.jpeg" />
         <script
@@ -176,10 +184,10 @@ const Home: NextPage = () => {
         </div>
 
         {/* Profile Image */}
-        <div className="flex justify-center items-center bg-white rounded-xl shadow-lg border-4 border-gray-200 p-2">
+        <div className="flex justify-center items-center bg-white rounded-xl shadow-md border border-gray-200 p-2">
           <Image
             src="/images/grama-and-jus.jpeg"
-            alt="Grama and Jus in Detroit"
+            alt="Jus with his grandmother in Detroit"
             width={500}
             height={500}
             sizes="(min-width: 768px) 500px, 100vw"
@@ -193,7 +201,7 @@ const Home: NextPage = () => {
             key={section.id}
             id={section.id}
             aria-labelledby={`${section.id}-heading`}
-            className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-lg"
+            className="mt-12 w-full max-w-4xl bg-white p-8 rounded-xl shadow-md"
           >
             <h2 id={`${section.id}-heading`} className="text-3xl md:text-4xl font-bold mb-4 text-crimson">
               {section.title}
@@ -205,7 +213,7 @@ const Home: NextPage = () => {
         {/* Contact Button */}
         <a
           href="mailto:jus.buckingham@gmail.com"
-          className="mt-12 inline-block px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-lg hover:bg-dark-crimson focus:ring-2 focus:ring-crimson focus:outline-none"
+          className="mt-12 inline-block px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-md hover:bg-dark-crimson focus-visible:outline focus-visible:outline-2 focus-visible:outline-crimson"
         >
           Contact
         </a>
@@ -224,9 +232,6 @@ const Home: NextPage = () => {
         }
         .hover\:bg-dark-crimson:hover {
           background-color: #a40e2c;
-        }
-        .underline:hover {
-          text-decoration-thickness: 2px;
         }
         :global(a:focus-visible), :global(button:focus-visible) {
           outline: 2px solid #dc143c;
