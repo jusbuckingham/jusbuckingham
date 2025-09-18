@@ -1,6 +1,6 @@
 # Jus Buckingham | Artist • Technologist • Entrepreneur
 
-Welcome to the personal website of Jus — a multidisciplinary creator blending art, technology, and entrepreneurship. Originally from Lansing, Michigan, with a background in theatre and experience performing in bands in Las Vegas, he brings the improvisational spirit of jazz into his work as a full‑stack engineer and entrepreneur. He founded King Conundrum in Chicago and now leads [Kofa.ai](https://kofa.ai) in Los Angeles, building AI‑driven tools rooted in Black consciousness.
+Welcome to my personal website - I’m Jus, a multidisciplinary creator blending art, technology, and entrepreneurship. I’m originally from Lansing, Michigan, with a background in theatre and experience performing in bands in Las Vegas. I’ve been a saxophonist since childhood, and I bring the improvisational spirit of jazz into my work as a full-stack engineer and entrepreneur. I founded King Conundrum in Chicago and now lead [Kofa.ai](https://kofa.ai) in Los Angeles, where I build AI-driven tools rooted in Black consciousness.
 
 ## 🛠️ Tech Stack
 
