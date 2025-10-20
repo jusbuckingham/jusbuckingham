@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       content: (
         <div>
           <p>
-            A multidisciplinary creator blending art, technology, and entrepreneurship. Originally from Lansing, Michigan, with a background in theatre and experience performing in bands in Las Vegas, he is also a saxophonist who brings the improvisational spirit of jazz into his work as a full‑stack engineer and entrepreneur.
+            A multidisciplinary creator blending art, technology, and entrepreneurship. Originally from Lansing, Michigan, with a background in theatre and experience performing in bands in Las Vegas, he is also a saxophonist who brings the improvisational spirit of jazz into his work as an engineer and entrepreneur.
           </p>
           <p className="mt-4">
             He founded King Conundrum in Chicago, a collective for live shows, podcasts, and albums. Now based in Los Angeles, he leads <a
