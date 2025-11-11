@@ -13,15 +13,15 @@ const Home: NextPage = () => {
       content: (
         <div>
           <p>
-            A multidisciplinary creator blending art, technology, and entrepreneurship. Originally from Lansing, Michigan, with a background in theatre and experience performing in bands in Las Vegas, he is also a saxophonist who brings the improvisational spirit of jazz into his work as an engineer and entrepreneur.
+            I’m Jus Buckingham — an entrepreneur, AI engineer, and producer who loves building ideas that connect art, culture, and technology. I got my start in theatre and music, performing in bands and producing shows before diving into software engineering. That creative foundation still shapes everything I do.
           </p>
           <p className="mt-4">
-            He founded King Conundrum in Chicago, a collective for live shows, podcasts, and albums. Now based in Los Angeles, he leads <a
+            These days, I lead <a
               href="https://www.kofa.ai/"
               target="_blank"
               rel="noopener noreferrer"
               className={linkClass}
-            >Kofa.ai</a>, building AI‑driven tools rooted in Black consciousness to inform, protect, and inspire communities.
+            >Kofa.ai</a>, where we’re building AI‑driven tools rooted in Black consciousness to inform, protect, and inspire communities. I’m always looking for new ways to merge creativity with innovation — whether through code, design, or sound.
           </p>
         </div>
       ),
