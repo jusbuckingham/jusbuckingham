@@ -6,14 +6,14 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Jus Buckingham</title>
+        <title>Jus Buckingham | Entrepreneur & AI Engineer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Official site of Jus Buckingham — entrepreneur, AI engineer, and producer." />
+        <meta name="description" content="Official site of Jus Buckingham — entrepreneur, AI engineer, and producer. Founder of LegatePro and Kofa.ai, a conscious news platform." />
         <meta name="theme-color" content="#dc143c" />
 
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Jus Buckingham" />
-        <meta property="og:description" content="Entrepreneur, AI engineer, and producer." />
+        <meta property="og:description" content="Entrepreneur, AI engineer, and producer. Founder of LegatePro and Kofa.ai." />
         <meta property="og:image" content="/images/preview.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://jusbuckingham.com" />
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Jus Buckingham" />
-        <meta name="twitter:description" content="Entrepreneur, AI engineer, and producer." />
+        <meta name="twitter:description" content="Entrepreneur, AI engineer, and producer. Founder of LegatePro and Kofa.ai." />
         <meta name="twitter:image" content="/images/preview.png" />
 
         <link rel="icon" href="/images/favicon.png" type="image/png" />

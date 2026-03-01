@@ -3,7 +3,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../components/Layout';
 
-const linkClass = "text-indigo-600 underline decoration-1 underline-offset-2 hover:decoration-2 hover:text-crimson focus-visible:outline focus-visible:outline-2 focus-visible:outline-crimson";
+const LINK_CLASS =
+  'text-indigo-600 underline decoration-1 underline-offset-2 hover:decoration-2 hover:text-crimson focus-visible:outline focus-visible:outline-2 focus-visible:outline-crimson';
+
+const CONTACT_EMAIL = 'jus.buckingham@gmail.com';
 
 const Home: NextPage = () => {
   const sections = [
@@ -13,15 +16,28 @@ const Home: NextPage = () => {
       content: (
         <div>
           <p>
-            I’m Jus Buckingham — an entrepreneur, AI engineer, and producer who loves building ideas that connect art, culture, and technology. I got my start in theatre and music, performing in bands and producing shows before diving into software engineering. That creative foundation still shapes everything I do.
+            Jus Buckingham is an entrepreneur, AI engineer, and producer focused on building products at the intersection of culture, creativity, and technology. His creative roots began in theatre and music—performing in bands and producing live shows—before moving into software engineering.
           </p>
           <p className="mt-4">
-            These days, I lead <a
+            He is the founder of{' '}
+            <a
+              href="https://legatepro.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={LINK_CLASS}
+            >
+              LegatePro
+            </a>
+            , a modern command center for estate and probate workflows, and he also leads{' '}
+            <a
               href="https://www.kofa.ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className={linkClass}
-            >Kofa.ai</a>, where we’re building AI‑driven tools rooted in Black consciousness to inform, protect, and inspire communities. I’m always looking for new ways to merge creativity with innovation — whether through code, design, or sound.
+              className={LINK_CLASS}
+            >
+              Kofa.ai
+            </a>
+            , a conscious news platform providing AI-curated reporting and thoughtful, independent analysis.
           </p>
         </div>
       ),
@@ -54,10 +70,9 @@ const Home: NextPage = () => {
             {
               category: 'Movies',
               items: [
+                { name: 'The Passion of the Christ', url: 'https://en.wikipedia.org/wiki/The_Passion_of_the_Christ' },
                 { name: 'On the Waterfront', url: 'https://en.wikipedia.org/wiki/On_the_Waterfront' },
-                { name: 'Mo Better Blues', url: 'https://en.wikipedia.org/wiki/Mo%27_Better_Blues' },
-                { name: 'The Prestige', url: 'https://en.wikipedia.org/wiki/The_Prestige_(film)' },
-                
+                { name: 'Malcolm X', url: 'https://en.wikipedia.org/wiki/Malcolm_X_(film)' },
               ]
             },
             {
@@ -78,7 +93,7 @@ const Home: NextPage = () => {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={linkClass}
+                      className={LINK_CLASS}
                     >
                       {name}
                     </a>
@@ -97,10 +112,20 @@ const Home: NextPage = () => {
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <li className="list-disc list-inside ml-4">
             <a
+              href="https://legatepro.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={LINK_CLASS}
+            >
+              LegatePro
+            </a>
+          </li>
+          <li className="list-disc list-inside ml-4">
+            <a
               href="https://www.kofa.ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className={linkClass}
+              className={LINK_CLASS}
             >
               Kofa.ai
             </a>
@@ -110,19 +135,9 @@ const Home: NextPage = () => {
               href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584"
               target="_blank"
               rel="noopener noreferrer"
-              className={linkClass}
+              className={LINK_CLASS}
             >
               ABE Podcast
-            </a>
-          </li>
-          <li className="list-disc list-inside ml-4">
-            <a
-              href="https://music.apple.com/us/playlist/ju%24la/pl.u-8aAVodjIoaMmWY"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={linkClass}
-            >
-              Ju$la
             </a>
           </li>
         </ul>
@@ -139,18 +154,18 @@ const Home: NextPage = () => {
         <title>Jus Buckingham | Artist, Technologist, Entrepreneur</title>
         <meta
           name="description"
-          content="The digital home of Jus Buckingham—renaissance man and founder of Kofa.ai. Discover selected works, favorite influences, and a vision driven by art, technology, and cultural innovation."
+          content="The digital home of Jus Buckingham—entrepreneur, AI engineer, and producer. Founder of LegatePro and Kofa.ai. Explore selected works, influences, and contact information."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://jusbuckingham.com/" />
         <meta property="og:title" content="Jus Buckingham | Artist, Technologist, Entrepreneur" />
-        <meta property="og:description" content="The digital home of Jus Buckingham—renaissance man and founder of Kofa.ai. Discover selected works, favorite influences, and a vision driven by art, technology, and cultural innovation." />
+        <meta property="og:description" content="The digital home of Jus Buckingham—entrepreneur, AI engineer, and producer. Founder of LegatePro and Kofa.ai. Explore selected works, influences, and contact information." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://jusbuckingham.com/" />
         <meta property="og:image" content="https://jusbuckingham.com/images/grama-and-jus.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Jus Buckingham | Artist, Technologist, Entrepreneur" />
-        <meta name="twitter:description" content="The digital home of Jus Buckingham—renaissance man and founder of Kofa.ai." />
+        <meta name="twitter:description" content="The digital home of Jus Buckingham—founder of LegatePro and Kofa.ai." />
         <meta name="twitter:image" content="https://jusbuckingham.com/images/grama-and-jus.jpeg" />
         <script
           type="application/ld+json"
@@ -160,13 +175,13 @@ const Home: NextPage = () => {
               '@type': 'Person',
               name: 'Jus K. Buckingham',
               url: 'https://jusbuckingham.com/',
-              email: 'mailto:jus.buckingham@gmail.com',
+              email: `mailto:${CONTACT_EMAIL}`,
               jobTitle: 'Artist, Technologist, Entrepreneur',
               image: 'https://jusbuckingham.com/images/grama-and-jus.jpeg',
               sameAs: [
+                'https://legatepro.com/',
                 'https://www.kofa.ai/',
-                'https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584',
-                'https://music.apple.com/us/playlist/ju%24la/pl.u-8aAVodjIoaMmWY'
+                'https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584'
               ]
             })
           }}
@@ -212,8 +227,8 @@ const Home: NextPage = () => {
 
         {/* Contact Button */}
         <a
-          href="mailto:jus.buckingham@gmail.com"
-          className="mt-12 inline-block px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-md hover:bg-dark-crimson focus-visible:outline focus-visible:outline-2 focus-visible:outline-crimson"
+          href={`mailto:${CONTACT_EMAIL}`}
+          className="mt-12 inline-block px-8 py-4 bg-crimson text-white font-semibold rounded-lg shadow-md hover:bg-dark-crimson focus-visible:outline focus-visible:outline-2 focus-visible:outline-crimson relative z-10 pointer-events-auto"
         >
           Contact
         </a>
