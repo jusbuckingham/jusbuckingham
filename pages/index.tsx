@@ -72,7 +72,7 @@ const Home: NextPage = () => {
               items: [
                 { name: 'The Passion of the Christ', url: 'https://en.wikipedia.org/wiki/The_Passion_of_the_Christ' },
                 { name: 'On the Waterfront', url: 'https://en.wikipedia.org/wiki/On_the_Waterfront' },
-                { name: 'Malcolm X', url: 'https://en.wikipedia.org/wiki/Malcolm_X_(film)' },
+                { name: 'Malcolm X', url: 'https://en.wikipedia.org/wiki/Malcolm_X_(1992_film)' },
               ]
             },
             {
