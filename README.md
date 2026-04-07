@@ -1,28 +1,25 @@
 # Jus Buckingham
 
-Entrepreneur | AI Engineer | Producer  
+Entrepreneur | Engineer | Producer  
 Los Angeles, CA
 
-Jus Buckingham builds modern software products at the intersection of technology, business, and culture.
+Jus Buckingham is an entrepreneur, engineer, and producer working at the intersection of technology, culture, and modern media. His work focuses on building thoughtful, well-structured software products that simplify complex systems and create clarity for real-world use.
 
-Founder of:
+## Founder
 
-- **[LegatePro](https://legatepro.com/)** — A modern command center for estate and probate workflows.
-- **[Kofa.ai](https://kofa.ai/)** — A conscious news platform delivering AI-curated reporting and independent analysis.
+- **[LegatePro](https://legatepro.com/)** — A modern command center for estate and probate workflows, designed to make complex administrative processes more accessible, organized, and efficient.
 
-Background in theatre and music informs a creator-first engineering approach: structured, performance-driven, and product-focused.
+## Selected Interview
 
----
+- **[ABE Podcast — Keep the Faith](https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584)**
 
 ## Tech
 
 Next.js • TypeScript • Tailwind CSS • Vercel
 
----
-
 ## Contact
 
-jus.buckingham@gmail.com
+[Contact](mailto:jus.buckingham@gmail.com)
 
 ---
 

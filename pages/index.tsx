@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       content: (
         <div>
           <p>
-            Jus Buckingham is an entrepreneur, AI engineer, and producer focused on building products at the intersection of culture, creativity, and technology. His creative roots began in theatre and music—performing in bands and producing live shows—before moving into software engineering.
+            Jus Buckingham is an entrepreneur, engineer, and producer whose work sits at the intersection of technology, culture, and modern media. With a background spanning software engineering, creative production, and live performance, he brings a multidisciplinary perspective to building products and stories that connect technical depth with human experience.
           </p>
           <p className="mt-4">
             He is the founder of{' '}
@@ -28,16 +28,10 @@ const Home: NextPage = () => {
             >
               LegatePro
             </a>
-            , a modern command center for estate and probate workflows, and he also leads{' '}
-            <a
-              href="https://www.kofa.ai/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={LINK_CLASS}
-            >
-              Kofa.ai
-            </a>
-            , a conscious news platform providing AI-curated reporting and thoughtful, independent analysis.
+            , a modern command center for estate and probate workflows designed to make complex administrative processes more accessible, organized, and efficient.
+          </p>
+          <p className="mt-4">
+            His broader work reflects a continuing interest in design, systems, storytelling, and the ways technology can support clarity, creativity, and independent thinking.
           </p>
         </div>
       ),
@@ -62,7 +56,7 @@ const Home: NextPage = () => {
             {
               category: 'Books',
               items: [
-                { name: 'Atlas Shrugged', url: 'https://en.wikipedia.org/wiki/Atlas_Shrugged' },
+                { name: 'The Fountainhead | Atlas Shrugged', url: 'https://en.wikipedia.org/wiki/The_Fountainhead|https://en.wikipedia.org/wiki/Atlas_Shrugged' },
                 { name: 'Siddhartha', url: 'https://en.wikipedia.org/wiki/Siddhartha_(novel)' },
                 { name: 'Post Office', url: 'https://en.wikipedia.org/wiki/Post_Office_(novel)' },
               ]
@@ -70,9 +64,9 @@ const Home: NextPage = () => {
             {
               category: 'Movies',
               items: [
-                { name: 'The Passion of the Christ', url: 'https://en.wikipedia.org/wiki/The_Passion_of_the_Christ' },
                 { name: 'On the Waterfront', url: 'https://en.wikipedia.org/wiki/On_the_Waterfront' },
-                { name: 'Malcolm X', url: 'https://en.wikipedia.org/wiki/Malcolm_X_(1992_film)' },
+                { name: 'Sunset Blvd.', url: 'https://en.wikipedia.org/wiki/Sunset_Boulevard_(film)' },
+                { name: 'Days of Heaven', url: 'https://en.wikipedia.org/wiki/Days_of_Heaven' },
               ]
             },
             {
@@ -87,18 +81,47 @@ const Home: NextPage = () => {
             <div key={category}>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">{category}</h3>
               <ul className="list-disc list-inside ml-6">
-                {items.map(({ name, url }) => (
-                  <li key={name}>
-                    <a
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={LINK_CLASS}
-                    >
-                      {name}
-                    </a>
-                  </li>
-                ))}
+                {items.map(({ name, url }) => {
+                  if (name.includes('|')) {
+                    const [firstUrl, secondUrl] = url.split('|');
+                    const [firstName, secondName] = name.split('|').map((s) => s.trim());
+
+                    return (
+                      <li key={name}>
+                        <a
+                          href={firstUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={LINK_CLASS}
+                        >
+                          {firstName}
+                        </a>
+                        {' | '}
+                        <a
+                          href={secondUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={LINK_CLASS}
+                        >
+                          {secondName}
+                        </a>
+                      </li>
+                    );
+                  }
+
+                  return (
+                    <li key={name}>
+                      <a
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={LINK_CLASS}
+                      >
+                        {name}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
@@ -107,29 +130,9 @@ const Home: NextPage = () => {
     },
     {
       id: 'selected-works',
-      title: 'Selected Works',
+      title: 'Interview',
       content: (
-        <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <li className="list-disc list-inside ml-4">
-            <a
-              href="https://legatepro.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={LINK_CLASS}
-            >
-              LegatePro
-            </a>
-          </li>
-          <li className="list-disc list-inside ml-4">
-            <a
-              href="https://www.kofa.ai/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={LINK_CLASS}
-            >
-              Kofa.ai
-            </a>
-          </li>
+        <ul className="grid grid-cols-1 gap-4">
           <li className="list-disc list-inside ml-4">
             <a
               href="https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584"
@@ -154,18 +157,18 @@ const Home: NextPage = () => {
         <title>Jus Buckingham | Artist, Technologist, Entrepreneur</title>
         <meta
           name="description"
-          content="The digital home of Jus Buckingham—entrepreneur, AI engineer, and producer. Founder of LegatePro and Kofa.ai. Explore selected works, influences, and contact information."
+          content="The digital home of Jus Buckingham—entrepreneur, engineer, and producer. Founder of LegatePro. Explore interviews, influences, and contact information."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="canonical" href="https://jusbuckingham.com/" />
         <meta property="og:title" content="Jus Buckingham | Artist, Technologist, Entrepreneur" />
-        <meta property="og:description" content="The digital home of Jus Buckingham—entrepreneur, AI engineer, and producer. Founder of LegatePro and Kofa.ai. Explore selected works, influences, and contact information." />
+        <meta property="og:description" content="The digital home of Jus Buckingham—entrepreneur, engineer, and producer. Founder of LegatePro. Explore interviews, influences, and contact information." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://jusbuckingham.com/" />
         <meta property="og:image" content="https://jusbuckingham.com/images/grama-and-jus.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Jus Buckingham | Artist, Technologist, Entrepreneur" />
-        <meta name="twitter:description" content="The digital home of Jus Buckingham—founder of LegatePro and Kofa.ai." />
+        <meta name="twitter:description" content="The digital home of Jus Buckingham—founder of LegatePro." />
         <meta name="twitter:image" content="https://jusbuckingham.com/images/grama-and-jus.jpeg" />
         <script
           type="application/ld+json"
@@ -180,7 +183,6 @@ const Home: NextPage = () => {
               image: 'https://jusbuckingham.com/images/grama-and-jus.jpeg',
               sameAs: [
                 'https://legatepro.com/',
-                'https://www.kofa.ai/',
                 'https://podcasts.apple.com/us/podcast/jus-buckingham-keep-the-faith/id1527013923?i=1000508511584'
               ]
             })
